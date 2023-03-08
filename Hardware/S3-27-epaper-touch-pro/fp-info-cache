@@ -1,351 +1,176 @@
-83808078366167
-RF_Module
-Ai-Thinker-Ra-01-LoRa
-Ai Thinker Ra-01 LoRa
-LoRa Ra-01
-0
-16
-16
-RF_Module
-Atmel_ATSAMR21G18-MR210UA_NoRFPads
-http://ww1.microchip.com/downloads/en/devicedoc/atmel-42475-atsamr21g18-mr210ua_datasheet.pdf
-module wireless zigbee 802.15.4 flash crypto ATSAMR21G18 AT45DB041E  TECC508A U.Fi
-0
-42
-42
-RF_Module
-BLE112-A
-Class 4 Bluetooth Module with on-board antenna
-Bluetooth Module
-0
-30
-30
-RF_Module
-BM78SPPS5xC2
-Bluetooth Dual-mode module with integral chip antenna (http://ww1.microchip.com/downloads/en/DeviceDoc/60001380C.pdf)
-Bluetooth BR/EDR BLE
-0
-33
-33
-RF_Module
-CMWX1ZZABZ
-https://wireless.murata.com/RFM/data/type_abz.pdf
-iot lora sigfox
-0
-57
-57
-RF_Module
-CYBLE-21Pin-10x10mm
-Cypress EZ-BLE PRoC Module (Bluetooth Smart) 21 Pin Module
-Cypress BT Bluetooth
-0
-21
-21
-RF_Module
-DWM1000
-IEEE802.15.4-2011 UWB
-UWB Module
-0
-24
-24
-RF_Module
-DecaWave_DWM1001
-https://www.decawave.com/sites/default/files/dwm1001_datasheet.pdf
-UWB module
-0
-34
-34
-RF_Module
-Digi_XBee_SMT
-http://www.digi.com/resources/documentation/digidocs/pdfs/90002126.pdf http://ftp1.digi.com/support/documentation/90001020_F.pdf
-Digi XBee SMT RF
-0
-37
-37
-RF_Module
-E18-MS1-PCB
-http://www.cdebyte.com/en/downpdf.aspx?id=122
-Zigbee
-0
-24
-24
-RF_Module
-E73-2G4M04S
-http://www.cdebyte.com/en/downpdf.aspx?id=243
-BLE BLE5 nRF52832
-0
-44
-44
-RF_Module
-ESP-07
-Wi-Fi Module, http://wiki.ai-thinker.com/_media/esp8266/docs/a007ps01a2_esp-07_product_specification_v1.2.pdf
-Wi-Fi Module
-0
-16
-16
-RF_Module
-ESP-12E
-Wi-Fi Module, http://wiki.ai-thinker.com/_media/esp8266/docs/aithinker_esp_12f_datasheet_en.pdf
-Wi-Fi Module
-0
-22
-22
-RF_Module
-ESP-WROOM-02
-https://www.espressif.com/sites/default/files/documentation/0c-esp-wroom-02_datasheet_en.pdf
-ESP WROOM-02 espressif esp8266ex
-0
-19
-19
-RF_Module
-ESP32-S2-MINI-1
-2.4 GHz Wi-Fi and Bluetooth combo chip, external antenna, https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf
-2.4 GHz Wi-Fi Bluetooth external antenna espressif  20*15.4mm
-0
-73
-65
-RF_Module
-ESP32-S2-MINI-1U
-2.4 GHz Wi-Fi and Bluetooth combo chip, external antenna, https://www.espressif.com/sites/default/files/documentation/esp32-s3-mini-1_mini-1u_datasheet_en.pdf
-2.4 GHz Wi-Fi Bluetooth external antenna espressif  15.4*15.4mm
-0
-73
-65
-RF_Module
-ESP32-S2-WROVER
-ESP32-S2-WROVER(-I) 2.4 GHz Wi-Fi https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf
-ESP32-S2  ESP32  WIFI
-0
-43
-43
-RF_Module
+41246156299928
+tp4056
 ESP32-S3-WROOM-1
 2.4 GHz Wi-Fi and Bluetooth module  https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
 2.4 GHz Wi-Fi and Bluetooth module
 0
 62
 41
-RF_Module
-ESP32-S3-WROOM-1U
-2.4 GHz Wi-Fi and Bluetooth module  https://www.espressif.com/sites/default/files/documentation/esp32-s3-wroom-1_wroom-1u_datasheet_en.pdf
-2.4 GHz Wi-Fi and Bluetooth module
+tp4056
+FFC-SMD_6P-P0.50_FH34SRJ-6S-0.5SH
+
+
 0
-62
-41
-RF_Module
-ESP32-WROOM-32
-Single 2.4 GHz Wi-Fi and Bluetooth combo chip https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32_datasheet_en.pdf
-Single 2.4 GHz Wi-Fi and Bluetooth combo  chip
+8
+8
+tp4056
+FPC-SMD_P0.50-24P_QCHF-SM-H2.0
+
+
 0
-60
-39
-RF_Module
-ESP32-WROOM-32D
-2.4 GHz Wi-Fi and Bluetooth module, https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf
-2.4 GHz Wi-Fi and Bluetooth module ESP32-D0WD Espressif ESP32-WROOM-32E
-0
-60
-39
-RF_Module
-ESP32-WROOM-32U
-Single 2.4 GHz Wi-Fi and Bluetooth combo chip with U.FL connector, https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32d_esp32-wroom-32u_datasheet_en.pdf
-Single 2.4 GHz Wi-Fi and Bluetooth combo  chip
-0
-60
-39
-RF_Module
-ESP32-WROOM-32UE
-2.4 GHz Wi-Fi and Bluetooth module, https://www.espressif.com/sites/default/files/documentation/esp32-wroom-32e_esp32-wroom-32ue_datasheet_en.pdf
-2.4 GHz Wi-Fi and Bluetooth module
-0
-60
-39
-RF_Module
-Garmin_M8-35_9.8x14.0mm_Layout6x6_P1.5mm
-D52M ANT SoC Module https://www.thisisant.com/assets/resources/D00001687_D52_Module_Datasheet.v.2.3_(Garmin).pdf
-RF SoC Radio ANT Bluetooth BLE D52 nRF52 Garmin Canada Dynastream Nordic
-0
-35
-35
-RF_Module
-HOPERF_RFM9XW_SMD
+26
+26
+tp4056
+HOPERF_RFM9XW_SMD_3D
 Low Power Long Range Transceiver Module SMD-16 (https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf)
 LoRa Low Power Long Range Transceiver Module
 0
 16
 16
-RF_Module
-HOPERF_RFM9XW_THT
-Low Power Long Range Transceiver Module THT-16 (https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf)
-Low Power Long Range Transceiver Module LoRa
+tp4056
+IND-SMD_L4.0-W4.0
+
+
 0
-16
-16
-RF_Module
-HOPERF_RFM69HW
-Radio, RF, Module, http://www.hoperf.com/upload/rf/RFM69HW-V1.3.pdf
-Radio RF Module
+2
+2
+tp4056
+LGA-8_L3.0-W3.0-P0.80-TR
+
+
 0
-16
-16
-RF_Module
-IQRF_TRx2DA_KON-SIM-01
-8 pin SIM connector for IQRF TR-x2DA(T) modules, http://iqrf.org/weben/downloads.php?id=104
-IQRF_KON-SIM-01 IQRF_TRx2DA
-0
-10
 8
-RF_Module
-IQRF_TRx2D_KON-SIM-01
-8 pin SIM connector for IQRF TR-x2D(C)(T) modules, http://iqrf.org/weben/downloads.php?id=104
-IQRF_KON-SIM-01 IQRF_TRx2D IQRF_TRx2DC
-0
-10
 8
-RF_Module
-Laird_BL652
-Bluetooth v4.2 + NFC module
-Bluetooth BLE NFC
+tp4056
+MXLPCherryLowProfile
+
+
 0
-39
-39
-RF_Module
-MOD-nRF8001
-BLE module, https://www.olimex.com/Products/Modules/RF/MOD-nRF8001/
-BLE module
+3
+2
+tp4056
+MX_SK6812MINI-E
+Add-on for regular MX-footprints with SK6812 MINI-E
+cherry MX SK6812 Mini-E rearmount rear mount led rgb backlight
 0
-11
-11
-RF_Module
-Microchip_RN4871
-Microchip RN4871 footprint
-RN4871 BLE
+4
+4
+tp4056
+MX_SK6812MINI-E_REV
+Add-on for regular MX-footprints with SK6812 MINI-E
+cherry MX SK6812 Mini-E rearmount rear mount led rgb backlight
 0
-16
-16
-RF_Module
-Modtronix_inAir9
-Modtronix Wireless SX1276 LoRa Module (http://modtronix.com/img/prod/imod/inair9/inair_dimensions.gif)
-Modtronix LoRa inAir inAir9 SX1276 RF 915MHz 868MHz Wireless
+4
+4
+tp4056
+MX_SK6812MINI-E_REV_UPDSIDE
+Add-on for regular MX-footprints with SK6812 MINI-E
+cherry MX SK6812 Mini-E rearmount rear mount led rgb backlight
 0
-14
-14
-RF_Module
-MonoWireless_TWE-L-WX
-https://www.mono-wireless.com/jp/products/TWE-LITE/MW-PDS-TWELITE-JP.pdf
-TWE-L-WX
+4
+4
+tp4056
+MX_SK6812MINI-E_UPDSIDE
+Add-on for regular MX-footprints with SK6812 MINI-E
+cherry MX SK6812 Mini-E rearmount rear mount led rgb backlight
 0
-32
-32
-RF_Module
-NINA-B111
-NINA-B111 LGA module 42 Pin https://content.u-blox.com/sites/default/files/NINA-B1_DataSheet_UBX-15019243.pdf#page=30
-NINA ublox u-blox b111 bluetooth nrf52840 module
+4
+4
+tp4056
+PWRM-TH_HLK-5M05
+
+
 0
-42
-42
-RF_Module
-Particle_P1
-https://docs.particle.io/datasheets/p1-datasheet/
-Particle P1
+4
+4
+tp4056
+RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm
+Alps rotary encoder, EC12E... with switch, vertical shaft, http://www.alps.com/prod/info/E/HTML/Encoder/Incremental/EC11/EC11E15204A3.html
+rotary encoder
 0
-75
-75
-RF_Module
-RAK811
-RAK811 LPWAN Module https://downloads.rakwireless.com/LoRa/RAK811/Hardware_Specification/RAK811_LoRa_Module_Datasheet_V1.4.pdf
-LoRa LoRaWAN RAK811
+7
+6
+tp4056
+SMD-4_1.2x2.0x1.55P
+
+
 0
-34
-34
-RF_Module
-RAK4200
-RAK4200 LPWAN Module https://downloads.rakwireless.com/LoRa/RAK4200/Hardware-Specification/RAK4200_Module_Specifications_V1.4.pdf
-LoRa LoRaWAN RAK4200
+4
+4
+tp4056
+SOT-23-5_L3.0-W1.7-P0.95-LS2.8-BR
+
+
+0
+5
+5
+tp4056
+SW-SMD_4P-L5.2-W5.2-P3.70-LS6.4
+
+
+0
+4
+4
+tp4056
+SW-SMD_G-SWITCH_MK-12C02-G015
+
+
+0
+7
+7
+tp4056
+SW_Cherry_MX_1.00u_PCB
+Cherry MX keyswitch, 1.00u, PCB mount, http://cherryamericas.com/wp-content/uploads/2014/12/mx_cat.pdf
+Cherry MX keyswitch 1.00u PCB
+0
+2
+2
+tp4056
+TE_2-1734839-4_1x24-1MP_P0.5mm_Horizontal
+TE FPC connector, 24 top-side contacts, 0.5mm pitch, SMT, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1734839%7FC%7Fpdf%7FEnglish%7FENG_CD_1734839_C_C_1734839.pdf%7F4-1734839-0
+te fpc 1734839
+0
+26
+25
+tp4056
+TE_2-1734839-4_1x24-1MP_P0.5mm_Horizontal_2
+TE FPC connector, 24 top-side contacts, 0.5mm pitch, SMT, https://www.te.com/commerce/DocumentDelivery/DDEController?Action=showdoc&DocId=Customer+Drawing%7F1734839%7FC%7Fpdf%7FEnglish%7FENG_CD_1734839_C_C_1734839.pdf%7F4-1734839-0
+te fpc 1734839
+0
+26
+25
+tp4056
+TF-SMD_XKTF-0803-0
+
+
+0
+13
+13
+tp4056
+USB-C_SMD-TYPE-C-31-M-12
+
+
 0
 20
-20
-RF_Module
-RFDigital_RFD77101
-RFDigital RFD77101 Simblee
-RFDigital RFD77101 Simblee
+17
+tp4056
+USB-SMD_U262-061N-4BVC11
+
+
 0
-45
-45
-RF_Module
-RN42
-Class 2 Bluetooth Module with on-board antenna
-Bluetooth Module
+10
+10
+tp4056
+tp4056
+8-Lead Thermally Enhanced Plastic Small Outline (SE) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
 0
-36
-33
-RF_Module
-RN42N
-Class 2 Bluetooth Module without antenna
-Bluetooth Module
-0
-39
-36
-RF_Module
-RN2483
-Low-Power Long Range LoRa Transceiver Module
-rf module lora lorawan
-0
-47
-47
-RF_Module
-Raytac_MDBT50Q
-Multiprotocol radio SoC module https://www.raytac.com/download/index.php?index_id=43
-wireless 2.4 GHz Bluetooth ble zigbee 802.15.4 thread nordic raytac nrf52840 nrf52833
-0
-61
-61
-RF_Module
-ST_SPBTLE
-Bluetooth Low Energy Module
-ble module st bluetooth
-0
-11
-11
-RF_Module
-TD1205
-https://github.com/Telecom-Design/Documentation_TD_RF_Module/blob/master/TD1205%20Datasheet.pdf
-SIGFOX Module
-0
-9
-9
-RF_Module
-TD1208
-https://github.com/Telecom-Design/Documentation_TD_RF_Module/blob/master/TD1208%20Datasheet.pdf
-SIGFOX Module
-0
-25
-25
-RF_Module
-Taiyo-Yuden_EYSGJNZWY
-Taiyo Yuden NRF51822 Module Bluetooth https://www.yuden.co.jp/wireless_module/document/datareport2/en/TY_BLE_EYSGJNZ_DataReport_V1_9_20180530E.pdf
-Taiyo Yuden NRF51822 Module Bluetooth 
-0
-30
-28
-RF_Module
-ZETA-433-SO_SMD
-RF transceiver SMD style https://www.rfsolutions.co.uk/downloads/1456219226DS-ZETA.pdf
-RF transceiver SMD style
-0
-12
-12
-RF_Module
-ZETA-433-SO_THT
-RF transceiver THT style https://www.rfsolutions.co.uk/downloads/1456219226DS-ZETA.pdf
-RF transceiver SMD style
-0
-12
-12
-RF_Module
-nRF24L01_Breakout
-nRF24L01 breakout board
-nRF24L01 adapter breakout
-0
+13
 8
-8
+tp4056
+zebra
+
+
+0
+0
+0
