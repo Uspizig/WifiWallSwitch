@@ -7,6 +7,12 @@ Please see https://hackaday.io/project/189884-airqearthq-lora-eink-wallswitch fo
 
 This files are additional Material for AirQ&EarthQ-LoRa EInk WallSwitch project published on Hackaday.io (https://hackaday.io/project/189884-airqearthq-lora-eink-wallswitch)
 
+
+If you remove the EINK Screen you may even see an covered RF Module RFM95 for Long Range Communication
+
+<img src="Hardware/S3-27-epaper-touch-pro/schematics/BOTTOMLDR.png" alt="PCB Customer View of WifiWallSwitch without EINK Screen" title="PCB Customer View of WifiWallSwitch without EINK Screen">
+
+
 On the PCB side you see the Main Processor an ESP32-S3 and various sensors:
 - Ultra Low Power RTC RV3028 for Low Power Battery Operation wakeup
 - Ultra Low Noise MEMS LSM6DSL GYRO+ACCEL 
@@ -17,14 +23,9 @@ On the PCB side you see the Main Processor an ESP32-S3 and various sensors:
 
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/Top.png" alt="TOP PCB View of WifiWallSwitch" title="TOP PCB View of WifiWallSwitch">
 
-
-If you remove the EINK Screen you may even see an covered RF Module RFM95 for Long Range Communication
-
-<img src="Hardware/S3-27-epaper-touch-pro/schematics/BOTTOMLDR.png" alt="PCB Customer View of WifiWallSwitch without EINK Screen" title="PCB Customer View of WifiWallSwitch without EINK Screen">
-
-
 And another view without all the SMD Parts soldered:
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/Top_noSMD.png" alt="Parts view of PCB  without SMD parts soldered" title="Parts view of PCB  without SMD parts soldered">
+
 
 
 WARNINGS
