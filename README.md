@@ -15,7 +15,17 @@ On the PCB side you see the Main Processor an ESP32-S3 and various sensors:
 - EInk Touch Screen 2.7" incl connector
 
 
-<img src="Hardware/S3-27-epaper-touch-pro/schematics/TOP.png" alt="TOP PCB View of WifiWallSwitch" title="WiFiWallSwitch Parts side">
+<img src="Hardware/S3-27-epaper-touch-pro/schematics/Top.png" alt="TOP PCB View of WifiWallSwitch" title="TOP PCB View of WifiWallSwitch">
+
+
+If you remove the EINK Screen you may even see an covered RF Module RFM95 for Long Range Communication
+
+<img src="Hardware/S3-27-epaper-touch-pro/schematics/BOTTOMLDR.png" alt="PCB Customer View of WifiWallSwitch without EINK Screen" title="PCB Customer View of WifiWallSwitch without EINK Screen">
+
+
+And another view without all the SMD Parts soldered:
+<img src="Hardware/S3-27-epaper-touch-pro/schematics/Top_noSMD.png" alt="Parts view of PCB  without SMD parts soldered" title="Parts view of PCB  without SMD parts soldered">
+
 
 WARNINGS
 
