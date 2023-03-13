@@ -1,5 +1,10 @@
 A AirQ&EarthQ-LoRa EInk WallSwitch that measures your Air Quality, monitores Earthquakes, measures Temperature
 
+<img src="Hardware/S3-27-epaper-touch-pro/schematics/TOPLDR.png" alt="TOP PCB View of WifiWallSwitch" title="WiFiWallSwitch Parts side">
+
+
+<img src="Hardware/S3-27-epaper-touch-pro/schematics/LDREINK.png" alt="Customer VIEW of PCB of WifiWallSwitch" title="WiFiWallSwitch Customer side">
+
 Please see https://hackaday.io/project/189884-airqearthq-lora-eink-wallswitch for further details
 
 This files are additional Material for AirQ&EarthQ-LoRa EInk WallSwitch project published on Hackaday.io (https://hackaday.io/project/189884-airqearthq-lora-eink-wallswitch)
