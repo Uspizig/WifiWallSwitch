@@ -439,7 +439,7 @@
       "idf": "",
       "netlist": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "3dStep/S3-27-epaper-touch.step",
       "vrml": "3D/C3-27-epaper-touch.wrl"
     },
     "page_layout_descr_file": ""
