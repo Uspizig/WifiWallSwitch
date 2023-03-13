@@ -15,7 +15,7 @@ On the PCB side you see the Main Processor an ESP32-S3 and various sensors:
 - EInk Touch Screen 2.7" incl connector
 
 
-<img src="Hardware/S3-27-epaper-touch-pro/schematics/TOPLDR.png" alt="TOP PCB View of WifiWallSwitch" title="WiFiWallSwitch Parts side">
+<img src="Hardware/S3-27-epaper-touch-pro/schematics/TOP.png" alt="TOP PCB View of WifiWallSwitch" title="WiFiWallSwitch Parts side">
 
 WARNINGS
 
