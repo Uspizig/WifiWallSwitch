@@ -1,14 +1,21 @@
 A AirQ&EarthQ-LoRa EInk WallSwitch that measures your Air Quality, monitores Earthquakes, measures Temperature
 
-<img src="Hardware/S3-27-epaper-touch-pro/schematics/TOPLDR.png" alt="TOP PCB View of WifiWallSwitch" title="WiFiWallSwitch Parts side">
-
-
+Main thing you see when you have a first look is the massive 2.7 " E-Ink Screen
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/LDREINK.png" alt="Customer VIEW of PCB of WifiWallSwitch" title="WiFiWallSwitch Customer side">
 
 Please see https://hackaday.io/project/189884-airqearthq-lora-eink-wallswitch for further details
 
 This files are additional Material for AirQ&EarthQ-LoRa EInk WallSwitch project published on Hackaday.io (https://hackaday.io/project/189884-airqearthq-lora-eink-wallswitch)
 
+On the PCB side you see the Main Processor an ESP32-S3 and various sensors:
+- Ultra Low Power RTC RV3028 for Low Power Battery Operation wakeup
+- Ultra Low Noise MEMS LSM6DSL GYRO+ACCEL 
+- Ultra Low Power Gateing Chip TPL5110: 
+- Bosch BME680 for Air Quality Measurements
+- EInk Touch Screen 2.7" incl connector
+
+
+<img src="Hardware/S3-27-epaper-touch-pro/schematics/TOPLDR.png" alt="TOP PCB View of WifiWallSwitch" title="WiFiWallSwitch Parts side">
 
 WARNINGS
 
@@ -64,6 +71,7 @@ What is planned:
 - Ultra Low Noise MEMS LSM6DSL GYRO+ACCEL for Earthquake Detection-> https://github.com/biagiom/QuakeSense
 - Ultra Low Noise MEMS LSM6DSL for movement detection and Tap Detection
 - Ultra Low Power Mode TPL5110: Let the Processor sleep with TPL5110 Power Gateing and shut down all that is battery draining.
+- Bosch BME680 for Air Quality Measurements
 - 9 physical buttons for moments where you do not wnat to use a touchscreen
 - LORA:
   - Transmit Air Quality Data on a regular Basis (every 15min)
