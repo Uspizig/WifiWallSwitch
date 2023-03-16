@@ -1,0 +1,50 @@
+Value,Reference,Footprint,LCSC
+1uF,"C1, C2, C3, C4, C5, C6, C7, C8, C14, C15",C_0805_2012,C28323
+4.7uF 50V US,"C9, C12",C_0805_2012,C162420
+4.7uF 50V_US,"C10, C11",Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C162420
+100nF,"C13, C19, C20",Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C49678
+C_Polarized 100uF,C16,Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B,C28323
+220uF,"C17, C18",Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B,
+MBR0530,"D1, D2, D3, D4, D13",Diode_SMD:D_SOD-123,
+SK6812MINI-E,D5-D12,tp4056:MX_SK6812MINI-E,
+MountingSwitch,"H1, H2, H6",MountingHole:MountingHole_3.2mm_M3,
+MountingSwitch,"H3, H4",baer_klein:baerklein,
+MountingSwitch,H5,Symbol:Symbol_CC-Noncommercial_CopperTop_Small,
+AFC24-S24FIC-00,J1,tp4056:FPC-SMD_P0.50-24P_QCHF-SM-H2.0,C262292
+Conn_01x06,"J2, J3, J8",Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,
+TochConn,J4,tp4056:FFC-SMD_6P-P0.50_FH34SRJ-6S-0.5SH,C224194
+Groove sensor,J5,footprint:MOLEX-I2C-532530470,
+Conn_01x05_Pin,J6,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,
+Conn_01x04_Pin,J7,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,
+Conn_01x06_Pin,J10,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,
+RESE,JP1,tp4056:SW-SMD_G-SWITCH_MK-12C02-G015,C2911519
+Jumper_2_Bridged,"JP2, JP3, JP5",Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm,
+Jumper_2_Open,JP4,Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,
+10uH,L1,tp4056:IND-SMD_L4.0-W4.0,
+Si1308,Q1,Package_TO_SOT_SMD:SOT-323_SC-70,
+Si2301,Q2,Package_TO_SOT_SMD:SOT-23,
+10K,"R1, R2, R4, R5, R6, R8, R9, R10, R12, R14, R15, R17, R18, R19",R_0805_2012,C17414
+3R,R3,R_0805_2012,C25237
+5k11,"R7, R13",R_0805_2012,C27834
+0.47R,R11,R_0805_2012,
+N.C.,"R16, R24",R_0805_2012,
+100R,R20,R_0805_2012,
+0R,"R21, R22",R_0805_2012,C17477
+LDR03,R23,OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical,
+SW_Push,SW1-SW9,tp4056:SW-SMD_4P-L5.2-W5.2-P3.70-LS6.4,
+VCOM,"TP1, TP2, TP7, TP8, TP9, TP12, TP13",TestPoint:TestPoint_Pad_D1.5mm,
+SHOT1,TP3,TestPoint:TestPoint_Pad_D1.5mm,
+PREVGL,TP4,TestPoint:TestPoint_Pad_D1.5mm,
+PREVGH,TP5,TestPoint:TestPoint_Pad_D1.5mm,
+DONE,TP6,TestPoint:TestPoint_Pad_D1.5mm,
+VCOM,TP10,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,
+SHOT,TP11,TestPoint:TestPoint_Pad_D1.5mm,
+RESET_TOUCH,TP14,TestPoint:TestPoint_Pad_D1.5mm,
+ESP32-S3-WROOM-1-N8,U1,tp4056:ESP32-S3-WROOM-1,C2913204
+RT9013,U2,Package_TO_SOT_SMD:SOT-23-5,C47773
+KoreanHropartsElecTYPE-C-31-M-12,U3,tp4056:USB-C_SMD-TYPE-C-31-M-12,C165948
+BME680,U5,tp4056:LGA-8_L3.0-W3.0-P0.80-TR,C125972
+TPL5110,U6,Package_TO_SOT_SMD:SOT-23-6,C125830
+RFM95W-868S2,U7,RF_Module:HOPERF_RFM9XW_SMD,C2844472
+LSM6DSL,U8,Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y,C126672
+,U9,rv3028:rv3028,

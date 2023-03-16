@@ -2,20 +2,20 @@
 <export version="E">
   <design>
     <source>C:\Users\User\Documents\Arduino\08Layout\bistable-smart-switch-master\Hardware\S3-27-epaper-touch-pro\S3-27-epaper-touch.kicad_sch</source>
-    <date>07.03.2023 15:52:55</date>
+    <date>16.03.2023 21:58:32</date>
     <tool>Eeschema (7.0.0)</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>ESP32-C3 epaper controller with touch</title>
+        <title>ESP32-S3 EInk controller with touch</title>
         <company/>
-        <rev>1.1</rev>
-        <date>2022-11-22</date>
+        <rev>1.0</rev>
+        <date>2023-03-07</date>
         <source>S3-27-epaper-touch.kicad_sch</source>
         <comment number="1" value="be used in home appliances with no more than 200 Watts top consumption."/>
         <comment number="2" value="industrial heavy load devices. This an experimental switch that should only"/>
         <comment number="3" value="it should NOT be used in any case for machinery that is for medical use or"/>
         <comment number="4" value="IMPORTANT: If used as an ON / OFF switch"/>
-        <comment number="5" value=""/>
+        <comment number="5" value="NO Comercial USE. GPL LICENSE"/>
         <comment number="6" value=""/>
         <comment number="7" value=""/>
         <comment number="8" value=""/>
@@ -25,13 +25,13 @@
   </design>
   <components>
     <comp ref="C1">
-      <value>4.7uF</value>
+      <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="LCSC">C1779</field>
+        <field name="LCSC">C28323</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C1779"/>
+      <property name="LCSC" value="C28323"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -40,13 +40,13 @@
       <tstamps>1514ba94-be00-448d-ba03-72c859ae03c9</tstamps>
     </comp>
     <comp ref="C2">
-      <value>4.7uF</value>
+      <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="LCSC">C1779</field>
+        <field name="LCSC">C28323</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C1779"/>
+      <property name="LCSC" value="C28323"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -55,13 +55,13 @@
       <tstamps>8cc1b4e8-ec92-4ca1-893f-7adf753d20e9</tstamps>
     </comp>
     <comp ref="C3">
-      <value>4.7uF</value>
+      <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="LCSC">C1779</field>
+        <field name="LCSC">C28323</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C1779"/>
+      <property name="LCSC" value="C28323"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -115,13 +115,13 @@
       <tstamps>1d7d1e61-f4ea-47a5-be3c-078e5fdf68c8</tstamps>
     </comp>
     <comp ref="C7">
-      <value>4.7uF</value>
+      <value>1uF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="LCSC">C1779</field>
+        <field name="LCSC">C28323</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C1779"/>
+      <property name="LCSC" value="C28323"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -145,13 +145,13 @@
       <tstamps>7ac26018-ba3f-450b-82d2-94a7348cbb5e</tstamps>
     </comp>
     <comp ref="C9">
-      <value>4.7uF</value>
+      <value>4.7uF 50V_US</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="LCSC">C1779</field>
+        <field name="LCSC">C162420</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C1779"/>
+      <property name="LCSC" value="C162420"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -160,13 +160,13 @@
       <tstamps>2864e7e4-489d-4665-b6ea-bc8f16515c0c</tstamps>
     </comp>
     <comp ref="C10">
-      <value>4.7uF</value>
+      <value>4.7uF 50V_US</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="LCSC">C1779</field>
+        <field name="LCSC">C162420</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C1779"/>
+      <property name="LCSC" value="C162420"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -175,13 +175,13 @@
       <tstamps>9248b6cd-f56c-4203-b004-bd7a036ed0a2</tstamps>
     </comp>
     <comp ref="C11">
-      <value>4.7uF 50V</value>
+      <value>4.7uF 50V_US</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="LCSC">C1779</field>
+        <field name="LCSC">C162420</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C1779"/>
+      <property name="LCSC" value="C162420"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -190,14 +190,14 @@
       <tstamps>d66f3d74-cd49-4909-9c4b-f08b852a016d</tstamps>
     </comp>
     <comp ref="C12">
-      <value>4.7uF</value>
+      <value>4.7uF 50V_US</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <datasheet>https://jlcpcb.com/partdetail/97651-CL10A106MA8NRNC/C96446</datasheet>
       <fields>
-        <field name="LCSC">C1779</field>
+        <field name="LCSC">C162420</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C1779"/>
+      <property name="LCSC" value="C162420"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -209,10 +209,10 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="LCSC">C28323</field>
+        <field name="LCSC">C49678</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C28323"/>
+      <property name="LCSC" value="C49678"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -222,7 +222,7 @@
     </comp>
     <comp ref="C14">
       <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
         <field name="LCSC">C28323</field>
       </fields>
@@ -237,7 +237,7 @@
     </comp>
     <comp ref="C15">
       <value>1uF</value>
-      <footprint>Capacitor_SMD:C_0805_2012Metric</footprint>
+      <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
         <field name="LCSC">C28323</field>
       </fields>
@@ -255,10 +255,10 @@
       <footprint>Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B</footprint>
       <datasheet>https://datasheet.lcsc.com/lcsc/2004141707_KEMET-T491X477K010AT_C513339.pdf</datasheet>
       <fields>
-        <field name="LCSC">C129289</field>
+        <field name="LCSC">C28323</field>
       </fields>
       <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
-      <property name="LCSC" value="C129289"/>
+      <property name="LCSC" value="C28323"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Polarized capacitor"/>
@@ -270,11 +270,8 @@
       <value>220uF</value>
       <footprint>Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B</footprint>
       <datasheet>https://jlcpcb.com/partdetail/Kemet-T490B227M006ATE500/C122252</datasheet>
-      <fields>
-        <field name="LCSC">C122252</field>
-      </fields>
       <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
-      <property name="LCSC" value="C122252"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Polarized capacitor"/>
@@ -286,11 +283,8 @@
       <value>220uF</value>
       <footprint>Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B</footprint>
       <datasheet>https://jlcpcb.com/partdetail/Kemet-T490B227M006ATE500/C122252</datasheet>
-      <fields>
-        <field name="LCSC">C122252</field>
-      </fields>
       <libsource lib="Device" part="C_Polarized" description="Polarized capacitor"/>
-      <property name="LCSC" value="C122252"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Polarized capacitor"/>
@@ -317,10 +311,10 @@
       <value>100nF</value>
       <footprint>Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder</footprint>
       <fields>
-        <field name="LCSC">C28323</field>
+        <field name="LCSC">C49678</field>
       </fields>
       <libsource lib="Device" part="C" description="Unpolarized capacitor"/>
-      <property name="LCSC" value="C28323"/>
+      <property name="LCSC" value="C49678"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Unpolarized capacitor"/>
@@ -332,11 +326,8 @@
       <value>MBR0530</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
-      <fields>
-        <field name="LCSC">C77336</field>
-      </fields>
       <libsource lib="Diode" part="MBR0530" description="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
-      <property name="LCSC" value="C77336"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
@@ -348,11 +339,8 @@
       <value>MBR0530</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
-      <fields>
-        <field name="LCSC">C77336</field>
-      </fields>
       <libsource lib="Diode" part="MBR0530" description="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
-      <property name="LCSC" value="C77336"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
@@ -364,11 +352,8 @@
       <value>MBR0530</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
-      <fields>
-        <field name="LCSC">C77336</field>
-      </fields>
       <libsource lib="Diode" part="MBR0530" description="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
-      <property name="LCSC" value="C77336"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
@@ -380,11 +365,8 @@
       <value>MBR0530</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
-      <fields>
-        <field name="LCSC">C77336</field>
-      </fields>
       <libsource lib="Diode" part="MBR0530" description="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
-      <property name="LCSC" value="C77336"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
@@ -396,11 +378,8 @@
       <value>SK6812MINI-E</value>
       <footprint>tp4056:MX_SK6812MINI-E</footprint>
       <datasheet>https://jlcpcb.com/partdetail/OpscoOptoelectronics-SK6812MINIE/C5149201</datasheet>
-      <fields>
-        <field name="LCSC">C5149201</field>
-      </fields>
       <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
-      <property name="LCSC" value="C5149201"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="RGB LED with integrated controller"/>
@@ -412,11 +391,8 @@
       <value>SK6812MINI-E</value>
       <footprint>tp4056:MX_SK6812MINI-E</footprint>
       <datasheet>https://jlcpcb.com/partdetail/OpscoOptoelectronics-SK6812MINIE/C5149201</datasheet>
-      <fields>
-        <field name="LCSC">C5149201</field>
-      </fields>
       <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
-      <property name="LCSC" value="C5149201"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="RGB LED with integrated controller"/>
@@ -428,11 +404,8 @@
       <value>SK6812MINI-E</value>
       <footprint>tp4056:MX_SK6812MINI-E</footprint>
       <datasheet>https://jlcpcb.com/partdetail/OpscoOptoelectronics-SK6812MINIE/C5149201</datasheet>
-      <fields>
-        <field name="LCSC">C5149201</field>
-      </fields>
       <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
-      <property name="LCSC" value="C5149201"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="RGB LED with integrated controller"/>
@@ -444,11 +417,8 @@
       <value>SK6812MINI-E</value>
       <footprint>tp4056:MX_SK6812MINI-E</footprint>
       <datasheet>https://jlcpcb.com/partdetail/OpscoOptoelectronics-SK6812MINIE/C5149201</datasheet>
-      <fields>
-        <field name="LCSC">C5149201</field>
-      </fields>
       <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
-      <property name="LCSC" value="C5149201"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="RGB LED with integrated controller"/>
@@ -460,11 +430,8 @@
       <value>SK6812MINI-E</value>
       <footprint>tp4056:MX_SK6812MINI-E</footprint>
       <datasheet>https://jlcpcb.com/partdetail/OpscoOptoelectronics-SK6812MINIE/C5149201</datasheet>
-      <fields>
-        <field name="LCSC">C5149201</field>
-      </fields>
       <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
-      <property name="LCSC" value="C5149201"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="RGB LED with integrated controller"/>
@@ -476,11 +443,8 @@
       <value>SK6812MINI-E</value>
       <footprint>tp4056:MX_SK6812MINI-E</footprint>
       <datasheet>https://jlcpcb.com/partdetail/OpscoOptoelectronics-SK6812MINIE/C5149201</datasheet>
-      <fields>
-        <field name="LCSC">C5149201</field>
-      </fields>
       <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
-      <property name="LCSC" value="C5149201"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="RGB LED with integrated controller"/>
@@ -492,11 +456,8 @@
       <value>SK6812MINI-E</value>
       <footprint>tp4056:MX_SK6812MINI-E</footprint>
       <datasheet>https://jlcpcb.com/partdetail/OpscoOptoelectronics-SK6812MINIE/C5149201</datasheet>
-      <fields>
-        <field name="LCSC">C5149201</field>
-      </fields>
       <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
-      <property name="LCSC" value="C5149201"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="RGB LED with integrated controller"/>
@@ -508,11 +469,8 @@
       <value>SK6812MINI-E</value>
       <footprint>tp4056:MX_SK6812MINI-E</footprint>
       <datasheet>https://jlcpcb.com/partdetail/OpscoOptoelectronics-SK6812MINIE/C5149201</datasheet>
-      <fields>
-        <field name="LCSC">C5149201</field>
-      </fields>
       <libsource lib="LED" part="WS2812B" description="RGB LED with integrated controller"/>
-      <property name="LCSC" value="C5149201"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="RGB LED with integrated controller"/>
@@ -524,11 +482,8 @@
       <value>MBR0530</value>
       <footprint>Diode_SMD:D_SOD-123</footprint>
       <datasheet>http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf</datasheet>
-      <fields>
-        <field name="LCSC">C77336</field>
-      </fields>
       <libsource lib="Diode" part="MBR0530" description="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
-      <property name="LCSC" value="C77336"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="30V 0.5A Schottky Power Rectifier Diode, SOD-123"/>
@@ -591,11 +546,26 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>4b71628c-658a-4421-831c-7e93ab72714c</tstamps>
     </comp>
+    <comp ref="H6">
+      <value>MountingSwitch</value>
+      <footprint>MountingHole:MountingHole_3.2mm_M3</footprint>
+      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
+      <property name="ki_description" value="Mounting Hole without connection"/>
+      <property name="ki_keywords" value="mounting hole"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d78bdc5e-f6db-4c2f-a563-652875daa2f2</tstamps>
+    </comp>
     <comp ref="J1">
       <value>AFC24-S24FIC-00</value>
       <footprint>tp4056:FPC-SMD_P0.50-24P_QCHF-SM-H2.0</footprint>
       <datasheet>C262292</datasheet>
+      <fields>
+        <field name="LCSC">C262292</field>
+      </fields>
       <libsource lib="footprint" part="FH12-24S-0.5SV55" description=""/>
+      <property name="LCSC" value="C262292"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <sheetpath names="/" tstamps="/"/>
@@ -624,7 +594,7 @@
       <tstamps>f430ddbd-5902-4489-82fc-84d8703cb977</tstamps>
     </comp>
     <comp ref="J4">
-      <value>Conn_01x06_Female</value>
+      <value>TochConn</value>
       <footprint>tp4056:FFC-SMD_6P-P0.50_FH34SRJ-6S-0.5SH</footprint>
       <datasheet>https://jlcpcb.com/partdetail/hrs_hirose-FH34SRJ_6S_0_5SH_50/C224194</datasheet>
       <fields>
@@ -695,8 +665,11 @@
     <comp ref="JP1">
       <value>RESE</value>
       <footprint>tp4056:SW-SMD_G-SWITCH_MK-12C02-G015</footprint>
+      <fields>
+        <field name="LCSC">C2911519</field>
+      </fields>
       <libsource lib="Jumper" part="Jumper_3_Bridged12" description="Jumper, 3-pole, pins 1+2 closed/bridged"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C2911519"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Jumper, 3-pole, pins 1+2 closed/bridged"/>
@@ -715,15 +688,45 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>99a4afcc-3e6b-49d8-b4c1-ea153c2454aa</tstamps>
     </comp>
+    <comp ref="JP3">
+      <value>Jumper_2_Bridged</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="Jumper_2_Bridged" description="Jumper, 2-pole, closed/bridged"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
+      <property name="ki_description" value="Jumper, 2-pole, closed/bridged"/>
+      <property name="ki_keywords" value="Jumper SPST"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>fee59574-ca50-42f0-9801-f94913b99b5b</tstamps>
+    </comp>
+    <comp ref="JP4">
+      <value>Jumper_2_Open</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="Jumper_2_Open" description="Jumper, 2-pole, open"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
+      <property name="ki_description" value="Jumper, 2-pole, open"/>
+      <property name="ki_keywords" value="Jumper SPST"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>a1dab206-1c77-49e2-a447-1f1dfb746d11</tstamps>
+    </comp>
+    <comp ref="JP5">
+      <value>Jumper_2_Bridged</value>
+      <footprint>Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm</footprint>
+      <libsource lib="Jumper" part="Jumper_2_Bridged" description="Jumper, 2-pole, closed/bridged"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
+      <property name="ki_description" value="Jumper, 2-pole, closed/bridged"/>
+      <property name="ki_keywords" value="Jumper SPST"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>6954dbe9-db44-458f-a1f8-db60bab65bb8</tstamps>
+    </comp>
     <comp ref="L1">
       <value>10uH</value>
-      <footprint>footprint:SWPA4030S1R0NT</footprint>
+      <footprint>tp4056:IND-SMD_L4.0-W4.0</footprint>
       <datasheet>https://jlcpcb.com/partdetail/Sunlord-SWPA4030S100MT/C38117</datasheet>
-      <fields>
-        <field name="LCSC">C38117</field>
-      </fields>
       <libsource lib="Device" part="L" description="Inductor"/>
-      <property name="LCSC" value="C38117"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Inductor"/>
@@ -735,11 +738,8 @@
       <value>Si1308</value>
       <footprint>Package_TO_SOT_SMD:SOT-323_SC-70</footprint>
       <datasheet>https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF</datasheet>
-      <fields>
-        <field name="LCSC">C469327</field>
-      </fields>
       <libsource lib="Transistor_FET" part="2N7002" description="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
-      <property name="LCSC" value="C469327"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="0.115A Id, 60V Vds, N-Channel MOSFET, SOT-23"/>
@@ -763,8 +763,11 @@
       <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://jlcpcb.com/partdetail/26547-0603WAF1002T5E/C25804</datasheet>
+      <fields>
+        <field name="LCSC">C17414</field>
+      </fields>
       <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor"/>
@@ -773,14 +776,14 @@
       <tstamps>173c4b62-7e1a-4f7e-83ed-7e37f19488fc</tstamps>
     </comp>
     <comp ref="R2">
-      <value>5k11</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
-        <field name="LCSC">C60816</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C60816"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -805,14 +808,14 @@
       <tstamps>7810cd61-2e85-4363-9a9b-7af2739c9c47</tstamps>
     </comp>
     <comp ref="R4">
-      <value>10 K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
-        <field name="LCSC">C25804</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C25804"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -821,14 +824,14 @@
       <tstamps>bdc17189-bcc9-409b-a3ff-746e7947ed08</tstamps>
     </comp>
     <comp ref="R5">
-      <value>4.7K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://jlcpcb.com/partdetail/23889-0603WAF4701T5E/C23162</datasheet>
       <fields>
-        <field name="LCSC">C23162</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C23162"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -837,14 +840,14 @@
       <tstamps>e66d3fe9-d49e-46e4-8f28-792a6d1aca82</tstamps>
     </comp>
     <comp ref="R6">
-      <value>10 K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
-        <field name="LCSC">C25804</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C25804"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -857,10 +860,10 @@
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
-        <field name="LCSC">C60816</field>
+        <field name="LCSC">C27834</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C60816"/>
+      <property name="LCSC" value="C27834"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -869,14 +872,14 @@
       <tstamps>ea0f44de-c3b1-493a-a6d6-4667e043e773</tstamps>
     </comp>
     <comp ref="R8">
-      <value>4.7K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://jlcpcb.com/partdetail/23889-0603WAF4701T5E/C23162</datasheet>
       <fields>
-        <field name="LCSC">C23162</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C23162"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -885,10 +888,13 @@
       <tstamps>19115886-3f11-4098-8fd1-7b2deae2ff30</tstamps>
     </comp>
     <comp ref="R9">
-      <value>4.7K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C17414</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -897,10 +903,13 @@
       <tstamps>564c851f-b4eb-44cd-bb75-c1d79867f306</tstamps>
     </comp>
     <comp ref="R10">
-      <value>4.7K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
+      <fields>
+        <field name="LCSC">C17414</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -921,14 +930,14 @@
       <tstamps>dbdc74ba-6d24-46c7-a8f5-07891cb14b39</tstamps>
     </comp>
     <comp ref="R12">
-      <value>10 K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
-        <field name="LCSC">C25804</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C25804"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -940,10 +949,10 @@
       <value>5k11</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <fields>
-        <field name="LCSC">C60816</field>
+        <field name="LCSC">C27834</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C60816"/>
+      <property name="LCSC" value="C27834"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -952,14 +961,14 @@
       <tstamps>35e59b2e-a21f-474f-a191-e89ee8c13537</tstamps>
     </comp>
     <comp ref="R14">
-      <value>4.7K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://jlcpcb.com/partdetail/23889-0603WAF4701T5E/C23162</datasheet>
       <fields>
-        <field name="LCSC">C23162</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C23162"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -968,14 +977,14 @@
       <tstamps>6ba98a15-9e95-477b-a1a8-ecb6670e8331</tstamps>
     </comp>
     <comp ref="R15">
-      <value>4.7K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://jlcpcb.com/partdetail/23889-0603WAF4701T5E/C23162</datasheet>
       <fields>
-        <field name="LCSC">C23162</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C23162"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -984,14 +993,11 @@
       <tstamps>f0ef0ea4-b77d-47b5-a85a-4b9491383b90</tstamps>
     </comp>
     <comp ref="R16">
-      <value>0R</value>
+      <value>N.C.</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
-      <fields>
-        <field name="LCSC">C25804</field>
-      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C25804"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -1000,14 +1006,14 @@
       <tstamps>c155ff1a-74c4-4250-a3ba-3990c6fc5dad</tstamps>
     </comp>
     <comp ref="R17">
-      <value>4.7K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://jlcpcb.com/partdetail/23889-0603WAF4701T5E/C23162</datasheet>
       <fields>
-        <field name="LCSC">C23162</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C23162"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -1016,14 +1022,14 @@
       <tstamps>361b2df7-217a-48c9-9065-3a596f4e5657</tstamps>
     </comp>
     <comp ref="R18">
-      <value>10 K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
-        <field name="LCSC">C25804</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C25804"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -1032,14 +1038,14 @@
       <tstamps>a2e9cf6d-f708-4806-a6b0-f517f31b0f6a</tstamps>
     </comp>
     <comp ref="R19">
-      <value>10 K</value>
+      <value>10K</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
       <fields>
-        <field name="LCSC">C25804</field>
+        <field name="LCSC">C17414</field>
       </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C25804"/>
+      <property name="LCSC" value="C17414"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -1048,27 +1054,27 @@
       <tstamps>c99126e9-1c2f-48ee-938e-966f607c978b</tstamps>
     </comp>
     <comp ref="R20">
-      <value>10 K</value>
+      <value>100R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://datasheet.lcsc.com/lcsc/2206010045_UNI-ROYAL-Uniroyal-Elec-0603WAF1002T5E_C25804.pdf</datasheet>
-      <fields>
-        <field name="LCSC">C25804</field>
-      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value="C25804"/>
+      <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
       <property name="ki_keywords" value="R resistor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>91e85a9e-a053-4889-98ad-985a45fbfb5f</tstamps>
+      <tstamps>a3ab42af-7020-428f-88ac-18828b52dccf</tstamps>
     </comp>
     <comp ref="R21">
       <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://jlcpcb.com/partdetail/23889-0603WAF4701T5E/C23162</datasheet>
+      <fields>
+        <field name="LCSC">C17477</field>
+      </fields>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
-      <property name="LCSC" value=""/>
+      <property name="LCSC" value="C17477"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
       <property name="ki_description" value="Resistor, small symbol"/>
@@ -1080,6 +1086,33 @@
       <value>0R</value>
       <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <datasheet>https://jlcpcb.com/partdetail/23889-0603WAF4701T5E/C23162</datasheet>
+      <fields>
+        <field name="LCSC">C17477</field>
+      </fields>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <property name="LCSC" value="C17477"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
+      <property name="ki_description" value="Resistor, small symbol"/>
+      <property name="ki_keywords" value="R resistor"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>626cbb6a-3076-4796-8e8b-142d3ee5ba0e</tstamps>
+    </comp>
+    <comp ref="R23">
+      <value>LDR03</value>
+      <footprint>OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical</footprint>
+      <datasheet>N.C.</datasheet>
+      <libsource lib="Sensor_Optical" part="LDR03" description="light dependent resistor"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
+      <property name="ki_description" value="light dependent resistor"/>
+      <property name="ki_keywords" value="light dependent photo resistor LDR"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>d7783459-b25b-4820-8016-87512c07b555</tstamps>
+    </comp>
+    <comp ref="R24">
+      <value>N.C.</value>
+      <footprint>Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder</footprint>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <property name="LCSC" value=""/>
       <property name="Sheetname" value=""/>
@@ -1087,7 +1120,7 @@
       <property name="ki_description" value="Resistor, small symbol"/>
       <property name="ki_keywords" value="R resistor"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>626cbb6a-3076-4796-8e8b-142d3ee5ba0e</tstamps>
+      <tstamps>5a55b32a-7aa8-450b-b4d0-b99b31144f11</tstamps>
     </comp>
     <comp ref="SW1">
       <value>SW_Push</value>
@@ -1309,6 +1342,39 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b73fd39c-3565-4d2f-ba57-80b3756cb701</tstamps>
     </comp>
+    <comp ref="TP12">
+      <value>VCOM</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>e1de44b5-b738-4276-a4a2-dc8908a87700</tstamps>
+    </comp>
+    <comp ref="TP13">
+      <value>VCOM</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>86e050be-bf8f-4330-a18d-c530175918b5</tstamps>
+    </comp>
+    <comp ref="TP14">
+      <value>RESET_TOUCH</value>
+      <footprint>TestPoint:TestPoint_Pad_D1.5mm</footprint>
+      <libsource lib="Connector" part="TestPoint" description="test point"/>
+      <property name="Sheetname" value=""/>
+      <property name="Sheetfile" value="S3-27-epaper-touch.kicad_sch"/>
+      <property name="ki_description" value="test point"/>
+      <property name="ki_keywords" value="test point tp"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamps>7f88610d-f933-41f7-bb92-dcc0678db410</tstamps>
+    </comp>
     <comp ref="U1">
       <value>ESP32-S3-WROOM-1-N8</value>
       <footprint>tp4056:ESP32-S3-WROOM-1</footprint>
@@ -1355,7 +1421,7 @@
     </comp>
     <comp ref="U5">
       <value>BME680</value>
-      <footprint>Package_LGA:Bosch_LGA-8_3x3mm_P0.8mm_ClockwisePinNumbering</footprint>
+      <footprint>tp4056:LGA-8_L3.0-W3.0-P0.80-TR</footprint>
       <datasheet>https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf</datasheet>
       <fields>
         <field name="LCSC">C125972</field>
@@ -1711,6 +1777,24 @@
         <pin num="2" name="B" type="passive"/>
       </pins>
     </libpart>
+    <libpart lib="Jumper" part="Jumper_2_Open">
+      <description>Jumper, 2-pole, open</description>
+      <docs>~</docs>
+      <footprints>
+        <fp>Jumper*</fp>
+        <fp>TestPoint*2Pads*</fp>
+        <fp>TestPoint*Bridge*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">Jumper_2_Open</field>
+        <field name="Datasheet">~</field>
+      </fields>
+      <pins>
+        <pin num="1" name="A" type="passive"/>
+        <pin num="2" name="B" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="Jumper" part="Jumper_3_Bridged12">
       <description>Jumper, 3-pole, pins 1+2 closed/bridged</description>
       <docs>~</docs>
@@ -1877,6 +1961,23 @@
         <pin num="12" name="CS" type="input"/>
         <pin num="13" name="SCL" type="input"/>
         <pin num="14" name="SDA" type="bidirectional"/>
+      </pins>
+    </libpart>
+    <libpart lib="Sensor_Optical" part="LDR03">
+      <description>light dependent resistor</description>
+      <docs>http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf</docs>
+      <footprints>
+        <fp>R*LDR*10x8.5mm*P7.6mm*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">LDR03</field>
+        <field name="Footprint">OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical</field>
+        <field name="Datasheet">http://www.elektronica-componenten.nl/WebRoot/StoreNL/Shops/61422969/54F1/BA0C/C664/31B9/2173/C0A8/2AB9/2AEF/LDR03IMP.pdf</field>
+      </fields>
+      <pins>
+        <pin num="1" name="" type="passive"/>
+        <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Switch" part="SW_Push">
@@ -2063,6 +2164,9 @@
     <library logical="Sensor_Motion">
       <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Sensor_Motion.kicad_sym</uri>
     </library>
+    <library logical="Sensor_Optical">
+      <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Sensor_Optical.kicad_sym</uri>
+    </library>
     <library logical="Switch">
       <uri>C:\Program Files\KiCad\7.0\share\kicad\symbols\/Switch.kicad_sym</uri>
     </library>
@@ -2119,17 +2223,17 @@
     </net>
     <net code="2" name="+5VA">
       <node ref="C14" pin="1" pintype="passive"/>
+      <node ref="JP4" pin="2" pinfunction="B" pintype="passive"/>
       <node ref="Q2" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R2" pin="2" pintype="passive"/>
-      <node ref="R20" pin="2" pintype="passive"/>
       <node ref="U2" pin="1" pinfunction="VIN" pintype="power_in"/>
     </net>
     <net code="3" name="/3231_INT">
+      <node ref="JP3" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="JP5" pin="1" pinfunction="A" pintype="passive"/>
       <node ref="R12" pin="2" pintype="passive"/>
       <node ref="TP3" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U1" pin="12" pinfunction="IO8" pintype="bidirectional"/>
-      <node ref="U8" pin="4" pinfunction="INT1" pintype="output"/>
-      <node ref="U9" pin="2" pinfunction="INT" pintype="output"/>
     </net>
     <net code="4" name="/COL1">
       <node ref="J8" pin="6" pinfunction="Pin_6" pintype="passive"/>
@@ -2222,6 +2326,8 @@
     </net>
     <net code="20" name="/IO_18">
       <node ref="J3" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="R23" pin="2" pintype="passive"/>
+      <node ref="R24" pin="1" pintype="passive"/>
       <node ref="U1" pin="11" pinfunction="IO18" pintype="bidirectional"/>
     </net>
     <net code="21" name="/RELAIS_OFF">
@@ -2277,7 +2383,7 @@
       <node ref="R21" pin="1" pintype="passive"/>
       <node ref="R9" pin="2" pintype="passive"/>
       <node ref="U1" pin="35" pinfunction="IO42" pintype="bidirectional"/>
-      <node ref="U5" pin="5" pinfunction="SDO" pintype="bidirectional"/>
+      <node ref="U5" pin="3" pinfunction="SDI" pintype="bidirectional"/>
       <node ref="U9" pin="4" pinfunction="SDA" pintype="bidirectional"/>
     </net>
     <net code="30" name="/USB_D+">
@@ -2340,6 +2446,7 @@
       <node ref="R13" pin="1" pintype="passive"/>
       <node ref="R16" pin="1" pintype="passive"/>
       <node ref="R19" pin="2" pintype="passive"/>
+      <node ref="R24" pin="2" pintype="passive"/>
       <node ref="R3" pin="2" pintype="passive"/>
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="R7" pin="2" pintype="passive"/>
@@ -2358,6 +2465,9 @@
       <node ref="U7" pin="1" pinfunction="GND" pintype="power_in"/>
       <node ref="U7" pin="10" pinfunction="GND" pintype="power_in"/>
       <node ref="U7" pin="8" pinfunction="GND" pintype="power_in"/>
+      <node ref="U8" pin="1" pinfunction="SDO/SA0" pintype="bidirectional"/>
+      <node ref="U8" pin="2" pinfunction="SDX" pintype="bidirectional"/>
+      <node ref="U8" pin="3" pinfunction="SCX" pintype="input"/>
       <node ref="U8" pin="6" pinfunction="GND" pintype="power_in"/>
       <node ref="U8" pin="7" pinfunction="GND" pintype="passive"/>
       <node ref="U9" pin="5" pinfunction="GND" pintype="bidirectional"/>
@@ -2404,10 +2514,8 @@
       <node ref="Q1" pin="3" pinfunction="D" pintype="passive"/>
     </net>
     <net code="43" name="Net-(D4-K)">
-      <node ref="C17" pin="1" pintype="passive"/>
-      <node ref="C18" pin="1" pintype="passive"/>
       <node ref="D4" pin="1" pinfunction="K" pintype="passive"/>
-      <node ref="U9" pin="6" pinfunction="V_BCU" pintype="power_in"/>
+      <node ref="R20" pin="1" pintype="passive"/>
     </net>
     <net code="44" name="Net-(D5-DIN)">
       <node ref="D5" pin="4" pinfunction="DIN" pintype="input"/>
@@ -2441,99 +2549,122 @@
       <node ref="D13" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="D6" pin="1" pinfunction="VDD" pintype="power_in"/>
     </net>
-    <net code="52" name="Net-(JP1-A)">
+    <net code="52" name="Net-(J4-Pin_3)">
+      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive"/>
+      <node ref="TP14" pin="1" pinfunction="1" pintype="passive"/>
+    </net>
+    <net code="53" name="Net-(JP1-A)">
       <node ref="JP1" pin="1" pinfunction="A" pintype="passive"/>
       <node ref="R11" pin="1" pintype="passive"/>
     </net>
-    <net code="53" name="Net-(JP1-B)">
+    <net code="54" name="Net-(JP1-B)">
       <node ref="JP1" pin="3" pinfunction="B" pintype="passive"/>
       <node ref="R3" pin="1" pintype="passive"/>
     </net>
-    <net code="54" name="Net-(JP1-C)">
+    <net code="55" name="Net-(JP1-C)">
       <node ref="J1" pin="22" pinfunction="22" pintype="output"/>
       <node ref="JP1" pin="2" pinfunction="C" pintype="passive"/>
       <node ref="Q1" pin="2" pinfunction="S" pintype="passive"/>
     </net>
-    <net code="55" name="Net-(JP2-A)">
+    <net code="56" name="Net-(JP2-A)">
       <node ref="JP2" pin="1" pinfunction="A" pintype="passive"/>
       <node ref="U2" pin="5" pinfunction="VOUT" pintype="power_out"/>
     </net>
-    <net code="56" name="Net-(Q1-G)">
+    <net code="57" name="Net-(JP3-A)">
+      <node ref="JP3" pin="1" pinfunction="A" pintype="passive"/>
+      <node ref="TP13" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="4" pinfunction="INT1" pintype="output"/>
+    </net>
+    <net code="58" name="Net-(JP5-B)">
+      <node ref="JP5" pin="2" pinfunction="B" pintype="passive"/>
+      <node ref="U9" pin="2" pinfunction="INT" pintype="output"/>
+    </net>
+    <net code="59" name="Net-(Q1-G)">
       <node ref="J1" pin="23" pinfunction="23" pintype="bidirectional"/>
       <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R1" pin="1" pintype="passive"/>
     </net>
-    <net code="57" name="Net-(Q2-G)">
+    <net code="60" name="Net-(Q2-G)">
       <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R18" pin="2" pintype="passive"/>
     </net>
-    <net code="58" name="Net-(U1-IO46)">
+    <net code="61" name="Net-(U1-IO46)">
       <node ref="R16" pin="2" pintype="passive"/>
       <node ref="U1" pin="16" pinfunction="IO46" pintype="bidirectional"/>
     </net>
-    <net code="59" name="Net-(U2-EN)">
+    <net code="62" name="Net-(U2-EN)">
       <node ref="R2" pin="1" pintype="passive"/>
       <node ref="U2" pin="3" pinfunction="EN" pintype="input"/>
     </net>
-    <net code="60" name="Net-(U3-CC1)">
+    <net code="63" name="Net-(U3-CC1)">
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="U3" pin="A5" pinfunction="CC1" pintype="bidirectional"/>
     </net>
-    <net code="61" name="Net-(U3-CC2)">
+    <net code="64" name="Net-(U3-CC2)">
       <node ref="R7" pin="1" pintype="passive"/>
       <node ref="U3" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
     </net>
-    <net code="62" name="Net-(U5-SDI)">
+    <net code="65" name="Net-(U5-SDO)">
       <node ref="R5" pin="1" pintype="passive"/>
-      <node ref="U5" pin="3" pinfunction="SDI" pintype="bidirectional"/>
+      <node ref="U5" pin="5" pinfunction="SDO" pintype="bidirectional"/>
     </net>
-    <net code="63" name="Net-(U6-DELAY{slash}M_DRV)">
+    <net code="66" name="Net-(U6-DELAY{slash}M_DRV)">
       <node ref="R6" pin="1" pintype="passive"/>
       <node ref="U6" pin="3" pinfunction="DELAY/M_DRV" pintype="input"/>
     </net>
-    <net code="64" name="Net-(U6-DONE)">
+    <net code="67" name="Net-(U6-DONE)">
       <node ref="C13" pin="1" pintype="passive"/>
       <node ref="R19" pin="1" pintype="passive"/>
       <node ref="TP6" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="4" pinfunction="DONE" pintype="input"/>
     </net>
-    <net code="65" name="Net-(U6-DRV)">
+    <net code="68" name="Net-(U6-DRV)">
       <node ref="R18" pin="1" pintype="passive"/>
       <node ref="U6" pin="5" pinfunction="DRV" pintype="output"/>
     </net>
-    <net code="66" name="Net-(U6-EN{slash}ONE_SHOT)">
+    <net code="69" name="Net-(U6-EN{slash}ONE_SHOT)">
       <node ref="TP11" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U6" pin="6" pinfunction="EN/ONE_SHOT" pintype="input"/>
     </net>
-    <net code="67" name="Net-(U7-ANT)">
+    <net code="70" name="Net-(U7-ANT)">
       <node ref="TP10" pin="1" pinfunction="1" pintype="passive"/>
       <node ref="U7" pin="9" pinfunction="ANT" pintype="bidirectional"/>
     </net>
-    <net code="68" name="Net-(U8-SCL)">
+    <net code="71" name="Net-(U8-INT2)">
+      <node ref="TP12" pin="1" pinfunction="1" pintype="passive"/>
+      <node ref="U8" pin="9" pinfunction="INT2" pintype="output"/>
+    </net>
+    <net code="72" name="Net-(U8-SCL)">
       <node ref="R22" pin="1" pintype="passive"/>
       <node ref="U8" pin="13" pinfunction="SCL" pintype="input"/>
     </net>
-    <net code="69" name="Net-(U8-SDA)">
+    <net code="73" name="Net-(U8-SDA)">
       <node ref="R21" pin="2" pintype="passive"/>
       <node ref="U8" pin="14" pinfunction="SDA" pintype="bidirectional"/>
     </net>
-    <net code="70" name="PREVGH">
+    <net code="74" name="Net-(U9-V_BCU)">
+      <node ref="C17" pin="1" pintype="passive"/>
+      <node ref="C18" pin="1" pintype="passive"/>
+      <node ref="R20" pin="2" pintype="passive"/>
+      <node ref="U9" pin="6" pinfunction="V_BCU" pintype="power_in"/>
+    </net>
+    <net code="75" name="PREVGH">
       <node ref="C9" pin="2" pintype="passive"/>
       <node ref="D2" pin="1" pinfunction="K" pintype="passive"/>
       <node ref="J1" pin="4" pinfunction="4" pintype="bidirectional"/>
       <node ref="TP5" pin="1" pinfunction="1" pintype="passive"/>
     </net>
-    <net code="71" name="RX">
+    <net code="76" name="RX">
       <node ref="J2" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J6" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="U1" pin="37" pinfunction="TXD0" pintype="bidirectional"/>
     </net>
-    <net code="72" name="TX">
+    <net code="77" name="TX">
       <node ref="J2" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="J6" pin="3" pinfunction="Pin_3" pintype="passive"/>
       <node ref="U1" pin="36" pinfunction="RXD0" pintype="bidirectional"/>
     </net>
-    <net code="73" name="VBUS">
+    <net code="78" name="VBUS">
       <node ref="D10" pin="1" pinfunction="VDD" pintype="power_in"/>
       <node ref="D11" pin="1" pinfunction="VDD" pintype="power_in"/>
       <node ref="D12" pin="1" pinfunction="VDD" pintype="power_in"/>
@@ -2543,82 +2674,68 @@
       <node ref="D8" pin="1" pinfunction="VDD" pintype="power_in"/>
       <node ref="D9" pin="1" pinfunction="VDD" pintype="power_in"/>
       <node ref="J10" pin="1" pinfunction="Pin_1" pintype="passive"/>
+      <node ref="JP4" pin="1" pinfunction="A" pintype="passive"/>
       <node ref="Q2" pin="2" pinfunction="S" pintype="passive"/>
-      <node ref="R20" pin="1" pintype="passive"/>
+      <node ref="R23" pin="1" pintype="passive"/>
       <node ref="U3" pin="A4" pinfunction="VBUS" pintype="power_in"/>
       <node ref="U3" pin="A9" pinfunction="VBUS" pintype="power_in"/>
       <node ref="U3" pin="B4" pinfunction="VBUS" pintype="power_in"/>
       <node ref="U3" pin="B9" pinfunction="VBUS" pintype="power_in"/>
       <node ref="U6" pin="1" pinfunction="VDD" pintype="power_in"/>
     </net>
-    <net code="74" name="unconnected-(D9-DOUT-Pad2)">
+    <net code="79" name="unconnected-(D9-DOUT-Pad2)">
       <node ref="D9" pin="2" pinfunction="DOUT" pintype="output"/>
     </net>
-    <net code="75" name="unconnected-(J1-Pad18)">
+    <net code="80" name="unconnected-(J1-Pad18)">
       <node ref="J1" pin="18" pinfunction="18" pintype="no_connect"/>
     </net>
-    <net code="76" name="unconnected-(J1-Pad19)">
+    <net code="81" name="unconnected-(J1-Pad19)">
       <node ref="J1" pin="19" pinfunction="19" pintype="no_connect"/>
     </net>
-    <net code="77" name="unconnected-(J1-Pad24)">
+    <net code="82" name="unconnected-(J1-Pad24)">
       <node ref="J1" pin="24" pinfunction="24" pintype="no_connect"/>
     </net>
-    <net code="78" name="unconnected-(J4-Pin_3-Pad3)">
-      <node ref="J4" pin="3" pinfunction="Pin_3" pintype="passive+no_connect"/>
-    </net>
-    <net code="79" name="unconnected-(U1-IO3-Pad15)">
+    <net code="83" name="unconnected-(U1-IO3-Pad15)">
       <node ref="U1" pin="15" pinfunction="IO3" pintype="bidirectional"/>
     </net>
-    <net code="80" name="unconnected-(U1-IO35-Pad28)">
+    <net code="84" name="unconnected-(U1-IO35-Pad28)">
       <node ref="U1" pin="28" pinfunction="IO35" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="81" name="unconnected-(U1-IO36-Pad29)">
+    <net code="85" name="unconnected-(U1-IO36-Pad29)">
       <node ref="U1" pin="29" pinfunction="IO36" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="82" name="unconnected-(U1-IO37-Pad30)">
+    <net code="86" name="unconnected-(U1-IO37-Pad30)">
       <node ref="U1" pin="30" pinfunction="IO37" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="83" name="unconnected-(U1-IO45-Pad26)">
+    <net code="87" name="unconnected-(U1-IO45-Pad26)">
       <node ref="U1" pin="26" pinfunction="IO45" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="84" name="unconnected-(U2-FB-Pad4)">
+    <net code="88" name="unconnected-(U2-FB-Pad4)">
       <node ref="U2" pin="4" pinfunction="FB" pintype="input"/>
     </net>
-    <net code="85" name="unconnected-(U3-SBU1-PadA8)">
+    <net code="89" name="unconnected-(U3-SBU1-PadA8)">
       <node ref="U3" pin="A8" pinfunction="SBU1" pintype="bidirectional"/>
     </net>
-    <net code="86" name="unconnected-(U3-SBU2-PadB8)">
+    <net code="90" name="unconnected-(U3-SBU2-PadB8)">
       <node ref="U3" pin="B8" pinfunction="SBU2" pintype="bidirectional"/>
     </net>
-    <net code="87" name="unconnected-(U7-DIO0-Pad14)">
+    <net code="91" name="unconnected-(U7-DIO0-Pad14)">
       <node ref="U7" pin="14" pinfunction="DIO0" pintype="bidirectional"/>
     </net>
-    <net code="88" name="unconnected-(U7-DIO3-Pad11)">
+    <net code="92" name="unconnected-(U7-DIO3-Pad11)">
       <node ref="U7" pin="11" pinfunction="DIO3" pintype="bidirectional"/>
     </net>
-    <net code="89" name="unconnected-(U7-DIO4-Pad12)">
+    <net code="93" name="unconnected-(U7-DIO4-Pad12)">
       <node ref="U7" pin="12" pinfunction="DIO4" pintype="bidirectional"/>
     </net>
-    <net code="90" name="unconnected-(U7-DIO5-Pad7)">
+    <net code="94" name="unconnected-(U7-DIO5-Pad7)">
       <node ref="U7" pin="7" pinfunction="DIO5" pintype="bidirectional"/>
     </net>
-    <net code="91" name="unconnected-(U8-INT2-Pad9)">
-      <node ref="U8" pin="9" pinfunction="INT2" pintype="output"/>
-    </net>
-    <net code="92" name="unconnected-(U8-NC-Pad10)">
+    <net code="95" name="unconnected-(U8-NC-Pad10)">
       <node ref="U8" pin="10" pinfunction="NC" pintype="no_connect"/>
     </net>
-    <net code="93" name="unconnected-(U8-NC-Pad11)">
+    <net code="96" name="unconnected-(U8-NC-Pad11)">
       <node ref="U8" pin="11" pinfunction="NC" pintype="no_connect"/>
-    </net>
-    <net code="94" name="unconnected-(U8-SCX-Pad3)">
-      <node ref="U8" pin="3" pinfunction="SCX" pintype="input"/>
-    </net>
-    <net code="95" name="unconnected-(U8-SDO{slash}SA0-Pad1)">
-      <node ref="U8" pin="1" pinfunction="SDO/SA0" pintype="bidirectional"/>
-    </net>
-    <net code="96" name="unconnected-(U8-SDX-Pad2)">
-      <node ref="U8" pin="2" pinfunction="SDX" pintype="bidirectional"/>
     </net>
     <net code="97" name="unconnected-(U9-CLK-Pad1)">
       <node ref="U9" pin="1" pinfunction="CLK" pintype="input"/>
