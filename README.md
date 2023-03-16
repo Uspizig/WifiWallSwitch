@@ -63,7 +63,6 @@ OTA Sketch for OTA Update of the ESP32 over Wifi
 https://github.com/SensorsIot/ESP32-OTA
 
 Knolleary pubsubclient
-
 /pubsubclient/blob/master/examples/mqtt_auth/mqtt_auth
 https://github.com/knolleary/pubsubclient
 
