@@ -1,50 +1,50 @@
-Value,Reference,Footprint,LCSC
-1uF,"C1, C2, C3, C4, C5, C6, C7, C8, C14, C15",C_0805_2012,C28323
-4.7uF 50V US,"C9, C12",C_0805_2012,C162420
-4.7uF 50V_US,"C10, C11",Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C162420
-100nF,"C13, C19, C20",Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder,C49678
-C_Polarized 100uF,C16,Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B,C28323
-220uF,"C17, C18",Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B,
-MBR0530,"D1, D2, D3, D4, D13",Diode_SMD:D_SOD-123,
-SK6812MINI-E,D5-D12,tp4056:MX_SK6812MINI-E,
-MountingSwitch,"H1, H2, H6",MountingHole:MountingHole_3.2mm_M3,
-MountingSwitch,"H3, H4",baer_klein:baerklein,
-MountingSwitch,H5,Symbol:Symbol_CC-Noncommercial_CopperTop_Small,
-AFC24-S24FIC-00,J1,tp4056:FPC-SMD_P0.50-24P_QCHF-SM-H2.0,C262292
-Conn_01x06,"J2, J3, J8",Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,
-TochConn,J4,tp4056:FFC-SMD_6P-P0.50_FH34SRJ-6S-0.5SH,C224194
-Groove sensor,J5,footprint:MOLEX-I2C-532530470,
-Conn_01x05_Pin,J6,Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical,
-Conn_01x04_Pin,J7,Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical,
-Conn_01x06_Pin,J10,Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical,
-RESE,JP1,tp4056:SW-SMD_G-SWITCH_MK-12C02-G015,C2911519
-Jumper_2_Bridged,"JP2, JP3, JP5",Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm,
-Jumper_2_Open,JP4,Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,
-10uH,L1,tp4056:IND-SMD_L4.0-W4.0,
-Si1308,Q1,Package_TO_SOT_SMD:SOT-323_SC-70,
-Si2301,Q2,Package_TO_SOT_SMD:SOT-23,
-10K,"R1, R2, R4, R5, R6, R8, R9, R10, R12, R14, R15, R17, R18, R19",R_0805_2012,C17414
-3R,R3,R_0805_2012,C25237
-5k11,"R7, R13",R_0805_2012,C27834
-0.47R,R11,R_0805_2012,
-N.C.,"R16, R24",R_0805_2012,
-100R,R20,R_0805_2012,
-0R,"R21, R22",R_0805_2012,C17477
-LDR03,R23,OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical,
-SW_Push,SW1-SW9,tp4056:SW-SMD_4P-L5.2-W5.2-P3.70-LS6.4,
-VCOM,"TP1, TP2, TP7, TP8, TP9, TP12, TP13",TestPoint:TestPoint_Pad_D1.5mm,
-SHOT1,TP3,TestPoint:TestPoint_Pad_D1.5mm,
-PREVGL,TP4,TestPoint:TestPoint_Pad_D1.5mm,
-PREVGH,TP5,TestPoint:TestPoint_Pad_D1.5mm,
-DONE,TP6,TestPoint:TestPoint_Pad_D1.5mm,
-VCOM,TP10,Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical,
-SHOT,TP11,TestPoint:TestPoint_Pad_D1.5mm,
-RESET_TOUCH,TP14,TestPoint:TestPoint_Pad_D1.5mm,
-ESP32-S3-WROOM-1-N8,U1,tp4056:ESP32-S3-WROOM-1,C2913204
-RT9013,U2,Package_TO_SOT_SMD:SOT-23-5,C47773
-KoreanHropartsElecTYPE-C-31-M-12,U3,tp4056:USB-C_SMD-TYPE-C-31-M-12,C165948
-BME680,U5,tp4056:LGA-8_L3.0-W3.0-P0.80-TR,C125972
-TPL5110,U6,Package_TO_SOT_SMD:SOT-23-6,C125830
-RFM95W-868S2,U7,RF_Module:HOPERF_RFM9XW_SMD,C2844472
-LSM6DSL,U8,Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y,C126672
-,U9,rv3028:rv3028,
+"Reference","Value","Footprint","Datasheet","LCSC","Menge"
+"C1-C8, C14, C15","1uF","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","C28323","10"
+"C9-C12","4.7uF 50V_US","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","-- verschiedene Werte --","C162420","4"
+"C13, C19, C20","100nF","Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder","~","C49678","3"
+"C16","C_Polarized 100uF","Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B","https://datasheet.lcsc.com/lcsc/2004141707_KEMET-T491X477K010AT_C513339.pdf","C28323","1"
+"C18","220uF","Capacitor_Tantalum_SMD:CP_EIA-3528-21_Kemet-B","https://jlcpcb.com/partdetail/Kemet-T490B227M006ATE500/C122252","","1"
+"D1-D4, D13","MBR0530","Diode_SMD:D_SOD-123","http://www.mccsemi.com/up_pdf/MBR0520~MBR0580(SOD123).pdf","","5"
+"D5-D12","SK6812MINI-E","tp4056:MX_SK6812MINI-E","https://jlcpcb.com/partdetail/OpscoOptoelectronics-SK6812MINIE/C5149201","","8"
+"H1, H2, H6","MountingSwitch","MountingHole:MountingHole_3.2mm_M3","~","","3"
+"H3, H4","MountingSwitch","baer_klein:baerklein","~","","2"
+"H5","MountingSwitch","Symbol:Symbol_CC-Noncommercial_CopperTop_Small","~","","1"
+"J1","AFC24-S24FIC-00","tp4056:FPC-SMD_P0.50-24P_QCHF-SM-H2.0","C262292","C262292","1"
+"J2, J3, J8","Conn_01x06","Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical","~","","3"
+"J4","TochConn","tp4056:FFC-SMD_6P-P0.50_FH34SRJ-6S-0.5SH","https://jlcpcb.com/partdetail/hrs_hirose-FH34SRJ_6S_0_5SH_50/C224194","C224194","1"
+"J5","Conn_01x03_Pin","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","~","","1"
+"J6","Conn_01x05_Pin","Connector_PinHeader_2.54mm:PinHeader_1x05_P2.54mm_Vertical","~","","1"
+"J7","Conn_01x04_Pin","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","~","","1"
+"J10","Conn_01x06_Pin","Connector_PinHeader_2.54mm:PinHeader_1x06_P2.54mm_Vertical","~","","1"
+"JP1","RESE","tp4056:SW-SMD_G-SWITCH_MK-12C02-G015","~","C2911519","1"
+"JP2, JP3, JP5","Jumper_2_Bridged","Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm","~","","3"
+"JP4","Jumper_2_Open","Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm","~","","1"
+"JP6","Jumper_3_Bridged12","Jumper:SolderJumper-3_P1.3mm_Bridged12_RoundedPad1.0x1.5mm_NumberLabels","~","","1"
+"L1","10uH","tp4056:IND-SMD_L4.0-W4.0","https://jlcpcb.com/partdetail/Sunlord-SWPA4030S100MT/C38117","","1"
+"Q1","Si1308","Package_TO_SOT_SMD:SOT-323_SC-70","https://www.onsemi.com/pub/Collateral/NDS7002A-D.PDF","","1"
+"Q2","Si2301","Package_TO_SOT_SMD:SOT-23","http://www.vishay.com/docs/66709/si2319cd.pdf","","1"
+"R1, R2, R4-R6, R8-R10, R12, R14, R15, R17-R19, R25","10K","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","-- verschiedene Werte --","C17414","15"
+"R3","3R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","https://jlcpcb.com/partdetail/25980-0603WAJ030JT5E/C25237","C25237","1"
+"R7, R13","5k11","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","-- verschiedene Werte --","C27834","2"
+"R11","0.47R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","~","","1"
+"R16, R20, R24","N.C.","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","-- verschiedene Werte --","","3"
+"R21, R22","0R","Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder","https://jlcpcb.com/partdetail/23889-0603WAF4701T5E/C23162","C17477","2"
+"R23","LDR03","OptoDevice:R_LDR_10x8.5mm_P7.6mm_Vertical","N.C.","","1"
+"SW1-SW9","SW_Push","tp4056:SW-SMD_4P-L5.2-W5.2-P3.70-LS6.4","~","","9"
+"TP1, TP7, TP12, TP13","VCOM","TestPoint:TestPoint_Pad_D1.5mm","~","","4"
+"TP2","CLKOUT","TestPoint:TestPoint_Pad_D1.5mm","~","","1"
+"TP3","SHOT1","TestPoint:TestPoint_Pad_D1.5mm","~","","1"
+"TP4","PREVGL","TestPoint:TestPoint_Pad_D1.5mm","~","","1"
+"TP5","PREVGH","TestPoint:TestPoint_Pad_D1.5mm","~","","1"
+"TP6","DONE","TestPoint:TestPoint_Pad_D1.5mm","~","","1"
+"TP10","VCOM","Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical","~","","1"
+"TP11","SHOT","TestPoint:TestPoint_Pad_D1.5mm","~","","1"
+"TP14","RESET_TOUCH","TestPoint:TestPoint_Pad_D1.5mm","~","","1"
+"U1","ESP32-S3-WROOM-1-N8","tp4056:ESP32-S3-WROOM-1","https://www.lcsc.com/product-detail/WiFi-Modules_Espressif-Systems-ESP32-S3-WROOM-1-N8R2_C2913204.html","","1"
+"U2","RT9013","Package_TO_SOT_SMD:SOT-23-5","http://www.ti.com/lit/ds/symlink/tps722.pdf","C47773","1"
+"U3","KoreanHropartsElecTYPE-C-31-M-12","tp4056:USB-C_SMD-TYPE-C-31-M-12","https://www.lcsc.com/product-detail/USB-Connectors_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.html","C165948","1"
+"U5","BME680","tp4056:LGA-8_L3.0-W3.0-P0.80-TR","https://ae-bst.resource.bosch.com/media/_tech/media/datasheets/BST-BME680-DS001.pdf","C125972","1"
+"U6","TPL5110","Package_TO_SOT_SMD:SOT-23-6","http://www.ti.com/lit/ds/symlink/tpl5110.pdf","C125830","1"
+"U7","RFM95W-868S2","RF_Module:HOPERF_RFM9XW_SMD","https://www.hoperf.com/data/upload/portal/20181127/5bfcbea20e9ef.pdf","C2844472","1"
+"U8","LSM6DSL","Package_LGA:LGA-14_3x2.5mm_P0.5mm_LayoutBorder3x4y","","C126672","1"
+"U9","RV3032","rv3028:rv3028","","","1"
