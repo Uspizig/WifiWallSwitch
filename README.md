@@ -1,4 +1,4 @@
-A AirQ&EarthQ-LoRa EInk WallSwitch that measures your Air Quality, monitores Earthquakes, measures Temperature
+A AirQuality&EarthQuake-LoRa EInk WallSwitch that measures your Air Quality, monitores Earthquakes, measures Temperature, detects movement, measures Light Conditions
 
 Main thing you see when you have a first look is the massive 2.7 " E-Ink Screen
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/LDREINK.png" alt="Customer VIEW of PCB of WifiWallSwitch" title="WiFiWallSwitch Customer side">
