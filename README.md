@@ -215,6 +215,7 @@ TP15 BAT CHRG -> Battery charg Pin. Hopefully never needed.
 
 
 Known HW Limitations:
+- LDR is not working when WIFI is ON. Stupid ESP32-S3 Limitations
 
 TODO:
 - RV_3028 INT ist connected with LORA RFM MISO. No paralell usage possible
