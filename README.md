@@ -13,9 +13,6 @@ You want to push boundries even further: Use Arduino and do a deep Dive in Ultra
 Eight Ambient Light LEDs can give you a visuel quick feedback if needed:
 <img src="Pictures/WhiteHiddenButtonsCase/IMG20240105185650.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons. Ambient Light ON" title="Product View of WifiWallSwitch with enabled RGB LEDs">
 
-Close Up View of an Development sample with a minor defective Display
-<img src="Pictures/WhiteHiddenButtonsCase/ProductSideAbove.jpg" alt="Close Up Side View of WifiWallSwitch with EINK Screen and Design Buttons" title="Product View of WifiWallSwitch wit 2.7" EINK Screen">
-
 
 
 What is under the hood:
