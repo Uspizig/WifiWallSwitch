@@ -4,6 +4,11 @@ Same Device can be used as a Dekstop Media Player and Voice Assistant to control
 
 
 
+
+<img src="Pictures//ProductSideAbove.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons" title="Product View of WifiWallSwitch without EINK Screen">
+
+
+
 What is under the hood:
 Main thing you see when you have a first look is the massive 2.7 " E-Ink Screen
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/LDREINK.png" alt="Customer VIEW of PCB of WifiWallSwitch" title="WiFiWallSwitch Customer side">
