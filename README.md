@@ -1,7 +1,7 @@
 An AirQuality EInk WallSwitch that measures your Air Quality, measures Temperature, detects movement, measures Light Conditions... and many more.
 And the Best of all: "It can be your own LOCAL Voice Assistant or MediaPlayer"
 
-This Device perfectly integrates with you Smart Home HomeAssistant or IO Broker. 
+This Device perfectly integrates in your Smart Home (e.g. HomeAssistant or IO Broker).  A lightweight Design with a perfect WAF Factor.
 The device can be programmed, adapted and indiviudalised by YOU.
 Your want to push boundries even further: Use Arduino and do a deep Dive in Ultra low Power Mode. The Battery might run for Years with an intelligent Power Gateing.
 
