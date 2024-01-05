@@ -1,14 +1,18 @@
-A AirQuality&EarthQuake-LoRa EInk WallSwitch that measures your Air Quality, monitores Earthquakes, measures Temperature, detects movement, measures Light Conditions
+An AirQuality&EarthQuake-LoRa EInk WallSwitch that measures your Air Quality, monitores Earthquakes, measures Temperature, detects movement, measures Light Conditions
+Same Device can be used as a Dekstop Media Player and Voice Assistant to control your Smart Home with HomeAssistant 
 
+
+
+
+What is under the hood:
 Main thing you see when you have a first look is the massive 2.7 " E-Ink Screen
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/LDREINK.png" alt="Customer VIEW of PCB of WifiWallSwitch" title="WiFiWallSwitch Customer side">
 
 Please see https://hackaday.io/project/189884-airqearthq-lora-eink-wallswitch for further details
 
-This files are additional Material for AirQ&EarthQ-LoRa EInk WallSwitch project published on Hackaday.io (https://hackaday.io/project/189884-airqearthq-lora-eink-wallswitch)
 
-
-If you remove the EINK Screen you may even see an covered RF Module RFM95 for Long Range Communication
+Underneath the EINK Screen is a placeholder for an optional Long Range Communication Module. This Module works with LoRa, FSK or other wireless standards. 
+Up 15km Range of communication can be established with this module. 
 
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/BOTTOMLDR.png" alt="PCB Customer View of WifiWallSwitch without EINK Screen" title="PCB Customer View of WifiWallSwitch without EINK Screen">
 
@@ -19,7 +23,9 @@ On the PCB side you see the Main Processor an ESP32-S3 and various sensors:
 - Ultra Low Power Gateing Chip TPL5110: 
 - Bosch BME680 for Air Quality Measurements
 - EInk Touch Screen 2.7" incl connector
-
+- Space for the oprional INMP441 Microphone
+- 8 RGB LEDs which can be adressed individually. Perfect for Quizshow effects. Ideal for Audiovisual feeddback
+- Space for Several Connectors to plugin even more modules like Audio Module for an Media Player or Voice Assistant Feedback.
 
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/Top.png" alt="TOP PCB View of WifiWallSwitch" title="TOP PCB View of WifiWallSwitch">
 
@@ -27,7 +33,24 @@ And another view without all the SMD Parts soldered:
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/Top_noSMD.png" alt="Parts view of PCB  without SMD parts soldered" title="Parts view of PCB  without SMD parts soldered">
 
 
-What is working:
+
+What is currently working:
+
+Hardware:
+- Currently the HW BringUp is about to finish.
+- The basic Hardware is up and running stable.
+- Eink, Microphone, LEDs, Buttons, BME680. LSM6 Gyro work well.
+
+The optional Modules are  still under test
+  -   TP4065 Lipo Batterry Charger Circuit
+  -   Battery Switchover Circuit for WallMode
+  -   TPL5110 Low Power RTC Module
+  -   RV3028 Low Power Module
+  -   RF Module RFM95
+  -   230V Power Converter for Wall Mode.
+  
+
+Software Sketches working:
 Arduino:
   - Flashing the Device over USB with you Chrome Web Browser: https://web.esphome.io/
   - Logging over USB USBSerial
@@ -47,9 +70,10 @@ Arduino:
    - Logging over USB with ESP Home
    - Display Messages on EInk Display
    - Voice Assistant: Switch on Light,.... you name it
-   - Media Player
-   - Keyboard
+   - Media Player: Playback of TTS Messages, Audio Files,Web Radio
+   - Keyboard: 8 Buttons are detected individulally
    - RGB LED Control SK6812 Mini
+   - Flashing & Logging the Device over 2.54mm Socket with a dedicated Flash Adapter
      
 Known ESPHome Issues right now:
   - Voice Assistant has some issues if used together with Media Player. Leads to Stuttering Audio once Media Playback is started.
@@ -79,23 +103,21 @@ What is planned:
   - Recieve Commands to Switch on / off ext Relay
   - Switch to Desaster Mode and search for BLE Heart Rate Devices nearby and sent this data via LoRa
 
-
-
-
-
-
 WARNINGS
-
-Before you compile please ensure you modify all your credentials and used sensors in "credentials.h" which have been marked REPLACEMEUSER
-This Source Code is provided "AS it is" . If you use this code you agree that any harm, damage, burn or injuries are YOUR RESPONSIBILITY! 
-The Author may not be held liable for any damage that might happen if you try this code out.
+This is my hobby. Please do NOT be a DIRTY COPY CAT and make your own comercial product out of it.
+See License before you copy anything out of it.
+ 
+If you use this Hardware, Software, Code or schematics you agree that any harm, damage, burn or injuries are YOUR RESPONSIBILITY! 
+The Author may not be held liable for any damage that might happen if you try this code out or use this product or parts of it.
 Legal validity of this disclaimer: This disclaimer is to be regarded as part of the internet publication which you were referred from. 
 If sections or individual terms of this statement are not legal or correct, the content or validity of the other parts remain uninfluenced by this fact.
 
 Referrals and links The author is not responsible for any contents linked or referred to from his pages - unless he has full knowledge of illegal contents and would be able to prevent the visitors of his site from viewing those pages. If any damage occurs by the use of information presented there, the author might not be liable. Furthermore the author is not liable for any postings or messages published by users of discussion boards, guest books or mailing lists provided.
 
+Arduino:
+Before you compile please ensure you modify all your credentials and used sensors in "credentials.h" which have been marked REPLACEMEUSER
+This Source Code is provided "AS it is" . 
 Also ensure you have installed the following libs:
-
 Code Sources that influenced this Source Code and which libaries you may need:
 
 https://github.com/knolleary/pubsubclient/blob/master/examples/mqtt_auth/mqtt_auth.ino
@@ -125,5 +147,4 @@ https://github.com/knolleary/pubsubclient
 Fastled
 https://github.com/FastLED/FastLED
 
-/* Goal: Project Goal: Build a Desktop Sensorset that can measure the Air Quality, Detect Earthquakes and warn the user if certain levels are reached.
 
