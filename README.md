@@ -27,6 +27,62 @@ And another view without all the SMD Parts soldered:
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/Top_noSMD.png" alt="Parts view of PCB  without SMD parts soldered" title="Parts view of PCB  without SMD parts soldered">
 
 
+What is working:
+Arduino:
+  - Flashing the Device over USB with you Chrome Web Browser: https://web.esphome.io/
+  - Logging over USB USBSerial
+  - EInk Basic Update of content
+  - EInk Partial Update Dynamic Update of content
+  - Read out BME680 Data (Temp, Humidity, Pressure, eCO2, IAQ,...)
+  - Microfone: Calculate loudness in dBA
+  - Audio Player: Playback MP3, TTS via Google and Webradio
+  - 8 Buttons can be detected.
+  - 8 RGB LEDS whcih can be adressed individually
+  - LSM6 Gyro: Read out of Basic Values Roll, Pitch, Yaw
+  - All typical 24pin EInk Displays which are mentioned on GxEPD2: https://github.com/ZinggJM/GxEPD2/tree/master
+  - Flashing & Logging the Device over 2.54mm Socket with a dedicated Flash Adapter
+
+ Home Assistant with ESPHome Integration:
+   - Flashing the Device over USB with you Chrome Web Browser: https://web.esphome.io/
+   - Logging over USB with ESP Home
+   - Display Messages on EInk Display
+   - Voice Assistant: Switch on Light,.... you name it
+   - Media Player
+   - Keyboard
+   - RGB LED Control SK6812 Mini
+     
+Known ESPHome Issues right now:
+  - Voice Assistant has some issues if used together with Media Player. Leads to Stuttering Audio once Media Playback is started.
+  - No LSM GYRO integration
+  - 2 GPIOS used to much due to Keypad component of ESPhome only supports 4x4 Matrix Keyboards
+  - GPIO8 can not be used for Keyboard Fake Keys.
+
+Known Issues on Arduino:
+  - LSM6 Gyro has some issues with BME680 BSEC: Leads to constant output of 500 ppm
+
+What is planned:
+- EInk Touch Screen 2.7 'integration of Good Display https://www.good-display.com/product/259.html
+- A Touch screen https://www.good-display.com/product/259.html
+- Read out data of a Weather Station Bresser 6in1 We<ther Station and forward to MQTT with an RFM95 Chip.
+- LDR for Light Detection. Monitoring of Enviroment Data
+- Ultra Low Power RTC RV3028 for Low Power Battery Operation wakeup
+- Ultra Low Noise MEMS LSM6DSL GYRO+ACCEL for Earthquake Detection-> https://github.com/biagiom/QuakeSense
+- Ultra Low Noise MEMS LSM6DSL for movement detection and Tap Detection
+- Ultra Low Power Mode TPL5110: Let the Processor sleep with TPL5110 Power Gateing and shut down all that is battery draining.
+- Bosch BME680 for Air Quality Measurements
+- 9 physical buttons for moments where you do not wnat to use a touchscreen
+- KNX Integraion with Nano BCU
+- LORA:
+  - Transmit Air Quality Data on a regular Basis (every 15min)
+  - Transmit Data when Air Quality changes dramatically
+  - Transmit Data when Air Quality changes dramatically
+  - Recieve Commands to Switch on / off ext Relay
+  - Switch to Desaster Mode and search for BLE Heart Rate Devices nearby and sent this data via LoRa
+
+
+
+
+
 
 WARNINGS
 
@@ -70,23 +126,4 @@ Fastled
 https://github.com/FastLED/FastLED
 
 /* Goal: Project Goal: Build a Desktop Sensorset that can measure the Air Quality, Detect Earthquakes and warn the user if certain levels are reached.
-
-What is working:
-- None
-
-What is planned:
-- EInk Touch Screen 2.7 '
-- A Touch screen
-- Ultra Low Power RTC RV3028 for Low Power Battery Operation wakeup
-- Ultra Low Noise MEMS LSM6DSL GYRO+ACCEL for Earthquake Detection-> https://github.com/biagiom/QuakeSense
-- Ultra Low Noise MEMS LSM6DSL for movement detection and Tap Detection
-- Ultra Low Power Mode TPL5110: Let the Processor sleep with TPL5110 Power Gateing and shut down all that is battery draining.
-- Bosch BME680 for Air Quality Measurements
-- 9 physical buttons for moments where you do not wnat to use a touchscreen
-- LORA:
-  - Transmit Air Quality Data on a regular Basis (every 15min)
-  - Transmit Data when Air Quality changes dramatically
-  - Transmit Data when Air Quality changes dramatically
-  - Recieve Commands to Switch on / off ext Relay
-  - Switch to Desaster Mode and search for BLE Heart Rate Devices nearby and sent this data via LoRa
 
