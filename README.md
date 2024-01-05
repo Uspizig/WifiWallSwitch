@@ -1,8 +1,9 @@
-An AirQuality&EarthQuake-LoRa EInk WallSwitch that measures your Air Quality, monitores Earthquakes, measures Temperature, detects movement, measures Light Conditions
-Same Device can be used as a Dekstop Media Player and Voice Assistant to control your Smart Home with HomeAssistant 
+An AirQuality EInk WallSwitch that measures your Air Quality, measures Temperature, detects movement, measures Light Conditions... and many more.
+And the Best of all: "It can be your own LOCAL Voice Assistant or MediaPlayer"
 
-
-
+This Device perfectly integrates with you Smart Home HomeAssistant or IO Broker. 
+The device can be programmed, adapted and indiviudalised by YOU.
+Your want to push boundries even further: Use Arduino and do a deep Dive in Ultra low Power Mode. The Battery might run for Years with an intelligent Power Gateing.
 
 
 <img src="Pictures/WhiteHiddenButtonsCase/IMG_20240105_171326.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons" title="Product View of WifiWallSwitch without EINK Screen">
