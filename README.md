@@ -6,7 +6,7 @@ The device can be programmed, adapted and indiviudalised by YOU.
 Your want to push boundries even further: Use Arduino and do a deep Dive in Ultra low Power Mode. The Battery might run for Years with an intelligent Power Gateing.
 
 
-<img src="Pictures/WhiteHiddenButtonsCase/IMG_20240105_171326.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons" title="Product View of WifiWallSwitch with 2.7" EINK Screen">
+<img src="/Pictures/WhiteHiddenButtonsCase/ProductSideAbove.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons. Ambient Light OFF" title="Product View of WifiWallSwitch with disabled RGB LEDs">
 
 Ambient Light On:
 <img src="Pictures/WhiteHiddenButtonsCase/IMG20240105185650.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons. Ambient Light ON" title="Product View of WifiWallSwitch with enabled RGB LEDs">
