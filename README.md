@@ -180,3 +180,48 @@ Fastled
 https://github.com/FastLED/FastLED
 
 
+
+Settings for Jumpers & Solder Bridges:
+Jumper:
+- JP2 = This MUST BE OPEN! if USB Connected & 3.3V Prog
+- JP3 = GYRO INT Emergency CUT: If you want no more Interupts from the Gyro.
+- JP4 = MAINS Mode / No TPL5110 Mode. Disable the RTC for Power Gateing. Use for permanent connection to USB
+- JP5 = RV3028 INT CUT for RFM95 OP. Must be cut if an RFM Long Range RF Mode is installed
+- JP6 = Switch of Input Power Supply Voltage
+- JP5 = Solder for RFM95 OP & Cut JP5
+
+
+I²C Address of onboard Devices.
+- 0x52 RV3028
+- 0x6A LSM6DSL
+- 0x77 BME680
+
+Testpoints for soldering and Tinkering:
+TP1 EPD VCOM -> Debuging of EINK
+TP2 CLK RV3028 
+TP3 INT RV3028
+TP4 EPD PREVGL -> Debuging of EINK
+TP5 EPD PREVGH -> Debuging of EINK
+TP6 TPL DNE -> Debuging of EINK... Connect to a GPIO for Ulatra Low Power sleep and fire a 1 whenever you want to Deep Sleep on that GPIO
+TP7 SHOT RV3028 -> Wakeup Pin for RTC2
+TP8 RFM CS -> Soldering Pin needed for RFM95
+TP9 JTAG/Done
+TP10 RFM ANT -> Connector for 868 MHZ Antenna
+TP11 TPL SHOT -> Wakeup Pin for TPL 5110 RTC
+TP12 GYRO INT2
+TP13 GYRO INT1
+TP14 TOUCH RES -> Touch Controller Reset Pin. Hopefully never needed
+TP15 BAT CHRG -> Battery charg Pin. Hopefully never needed.
+
+
+Known HW Limitations:
+
+TODO:
+- RV_3028 INT ist connected with LORA RFM MISO. No paralell usage possible
+- INMP441 Mic ist connected with LORA RFM95. No paralell usage possible
+- USB ESD Diodes missing
+- SK6812 is an input of KNX connector at the same time?
+- Rerouting of SK6812 necesssary. Not possible to  GPIO 0... otherwise board will not start.
+- Done Pin TPL5110 not routed to ESP32 IO3. No Power Shutdown without a Solder Bridge
+- 
+
