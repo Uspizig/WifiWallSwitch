@@ -5,7 +5,7 @@ Same Device can be used as a Dekstop Media Player and Voice Assistant to control
 
 
 
-<img src="Pictures//ProductSideAbove.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons" title="Product View of WifiWallSwitch without EINK Screen">
+<img src="Pictures/WhiteHiddenButtonsCase/IMG_20240105_171326.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons" title="Product View of WifiWallSwitch without EINK Screen">
 
 
 
