@@ -1,20 +1,20 @@
-An AirQuality EInk WallSwitch that measures your Air Quality, measures Temperature, detects movement, measures Light Conditions... and many more.
+A WallSwitch with a clever EINK Display that measures your Air Quality, measures Temperature, detects movement, measures Light Conditions... and many more.
 And the Best of all: "It can be your own LOCAL Voice Assistant or MediaPlayer"
 
-This Device perfectly integrates in your Smart Home (e.g. HomeAssistant or IO Broker).  A lightweight Design with a perfect WAF Factor.
-The device can be programmed, adapted and indiviudalised by YOU.
-Your want to push boundries even further: Use Arduino and do a deep Dive in Ultra low Power Mode. The Battery might run for Years with an intelligent Power Gateing.
+This Device perfectly integrates in your Smart Home (e.g. HomeAssistant or IO Broker).  
+No permanent backlight On Display that disturbs your sleep. Just a brillant E-Ink Display with outstanding contrast and some Buttons that you can feel when you swipe over with your plam.
+A lightweight Design with a perfect WAF Factor. Fits on your Desktop or on your wall. 
+The device can be programmed, adapted, hacked, tinkered and individualised by YOU.
+You want to push boundries even further: Use Arduino and do a deep Dive in Ultra Low Power Mode. The Battery might run for Years with an intelligent Power Gateing.
 
 
 <img src="/Pictures/WhiteHiddenButtonsCase/ProductSideAbove.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons. Ambient Light OFF" title="Product View of WifiWallSwitch with disabled RGB LEDs">
 
-Ambient Light On:
+Eight Ambient Light LEDs can give you a visuel quick feedback if needed:
 <img src="Pictures/WhiteHiddenButtonsCase/IMG20240105185650.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons. Ambient Light ON" title="Product View of WifiWallSwitch with enabled RGB LEDs">
 
-Close Up View
+Close Up View of an Development sample with a minor defective Display
 <img src="Pictures/WhiteHiddenButtonsCase/ProductSideAbove.jpg" alt="Close Up Side View of WifiWallSwitch with EINK Screen and Design Buttons" title="Product View of WifiWallSwitch wit 2.7" EINK Screen">
-
-
 
 
 
@@ -27,14 +27,14 @@ Hardware Specs:
 - 2.7" EInk Epaper with or without Touch Screen... other screens might work as well
 - ESP32 S3 Dual Core Microcontroller with USB OTG, Wifi & BT, Mass Storage Mode. 
 - 8 X SK6812 Mini RBG LEDs
-- 8 X Hardware Buttons...REAL BUTTONS with clicky: No Touch Buttons that might not work if you have wet or dirty fingers
+- 8 X Hardware Buttons...REAL BUTTONS with clicks: No Touch Buttons that might not work if you have wet or dirty fingers
 - BOSCH BME680 for eCo2, Temperature, Humidity and Pressure Measurements
-- LSM6DSL Ultra Low Noise MEMS Gyro + Accel for Movement Detection and Earthquake Detection
+- ST LSM6DSL Ultra Low Noise MEMS Gyro + Accel for Movement Detection and Earthquake Detection
 - INMP441 MEMS Microphone for Voice Assistant
 - Socket for MAX98357A I2S Class D Amplifier for Audio Output for Media Player
 - LDR Ambient Light Sensor: Detect the Ambient Light conditions in your room.
 - RTC1: TPL5110 for PowerGateing and low Standby Current
-- RTC2: RV3028 C7 for Ultra Low RTC with Backup Cap lasts 3h
+- RTC2 Option: RV3028 C7 for Ultra Low RTC with Backup Cap lasts 3h
 - Optional: RFM95 LoRa Radio for Desaster Radio (Limitations: May not work together with Microphone)
 - Connector for KNX EIB Smart Home with Nano BCU
 - Connector for Your Own Ideas... Several free GPIOs
