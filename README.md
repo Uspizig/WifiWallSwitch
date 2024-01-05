@@ -13,6 +13,8 @@ You want to push boundries even further: Use Arduino and do a deep Dive in Ultra
 Eight Ambient Light LEDs can give you a visual quick feedback if needed:
 <img src="Pictures/WhiteHiddenButtonsCase/IMG20240105185650.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons. Ambient Light ON" title="Product View of WifiWallSwitch with enabled RGB LEDs">
 
+View of the components in HomeAssistant
+<img src="Pictures/HomeAssistant/Screenshot%202024-01-05%20194831.png" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons. Ambient Light ON" title="Product View of WifiWallSwitch with enabled RGB LEDs">
 
 
 What is under the hood:
