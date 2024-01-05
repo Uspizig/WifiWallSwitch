@@ -25,26 +25,32 @@ Hardware Specs:
 - ESP32 S3 Dual Core Microcontroller with USB OTG, Wifi & BT, Mass Storage Mode. 
 - 8 X SK6812 Mini RBG LEDs
 - 8 X Hardware Buttons...REAL BUTTONS with clicky: No Touch shit
-- BME680 for eCo2, Temperature, Humidity and Pressure Measurements
+- BOSCH BME680 for eCo2, Temperature, Humidity and Pressure Measurements
 - LSM6DSL Ultra Low Noise MEMS Gyro + Accel for Movement Detection and Earthquake Detection
 - INMP441 MEMS Microphone for Voice Assistant
-- Socket for MAX98357A I2S Class D Amplifier for Audio Output
+- Socket for MAX98357A I2S Class D Amplifier for Audio Output for Media Player
+- LDR Ambient Light Sensor: Detect the Ambient Light conditions in your room.
 - RTC1: TPL5110 for PowerGateing and low Standby Current
 - RTC2: RV3028 C7 for Ultra Low RTC with Backup Cap lasts 3h
 - Optional: RFM95 LoRa Radio for Desaster Radio (Limitations: May not work together with Microphone)
 - Connector for KNX EIB Smart Home with Nano BCU
 - Connector for Your Own Ideas... Several free GPIOs
+- Switch for adapting to Waveshare/Gooddisplay EINK Display
+- All SMD components have a size 0603 or larger to enable easier soldering/Tinkering.
 
 Please see https://hackaday.io/project/189884-airqearthq-lora-eink-wallswitch for further details
 
 
-Underneath the EINK Screen is a placeholder for an optional Long Range Communication Module. This Module works with LoRa, FSK or other wireless standards. 
-Up 15km Range of communication can be established with this module. 
+Underneath the EINK Screen is a placeholder for an optional RFM95/RFM98 Long Range Communication Module. This Module works with LoRa, FSK or other wireless standards. 
+Up 15km Range of communication can be established with this module. Perfect as well for decoding your Bresser Weather Station and translate it to MQTT for your Smart Home.
 
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/BOTTOMLDR.png" alt="PCB Customer View of WifiWallSwitch without EINK Screen" title="PCB Customer View of WifiWallSwitch without EINK Screen">
 
+The other side of the PCB looks like this:
+<img src="Hardware/S3-27-epaper-touch-pro/schematics/Top_noSMD.png" alt="Parts view of PCB  without SMD parts soldered" title="Parts view of PCB  without SMD parts soldered">
 
-On the PCB side you see the Main Processor an ESP32-S3 and various sensors:
+If you scroll further down you may see a picture of the TOP View of the PCB
+On the Top side of the PCB you see the Main Processor: This is an ESP32-S3 and various sensors:
 - Ultra Low Power RTC RV3028 for Low Power Battery Operation wakeup
 - Ultra Low Noise MEMS LSM6DSL GYRO+ACCEL 
 - Ultra Low Power Gateing Chip TPL5110: 
@@ -54,10 +60,9 @@ On the PCB side you see the Main Processor an ESP32-S3 and various sensors:
 - 8 RGB LEDs which can be adressed individually. Perfect for Quizshow effects. Ideal for Audiovisual feeddback
 - Space for Several Connectors to plugin even more modules like Audio Module for an Media Player or Voice Assistant Feedback.
 
-<img src="Hardware/S3-27-epaper-touch-pro/schematics/Top.png" alt="TOP PCB View of WifiWallSwitch" title="TOP PCB View of WifiWallSwitch">
 
-And another view without all the SMD Parts soldered:
-<img src="Hardware/S3-27-epaper-touch-pro/schematics/Top_noSMD.png" alt="Parts view of PCB  without SMD parts soldered" title="Parts view of PCB  without SMD parts soldered">
+And another view with all the SMD Parts simulated:
+<img src="Hardware/S3-27-epaper-touch-pro/schematics/Top.png" alt="TOP PCB View of WifiWallSwitch" title="TOP PCB View of WifiWallSwitch">
 
 
 
@@ -69,12 +74,12 @@ Hardware:
 - Eink, Microphone, LEDs, Buttons, BME680. LSM6 Gyro work well.
 
 The optional Modules are  still under test
-  -   TP4065 Lipo Batterry Charger Circuit
-  -   Battery Switchover Circuit for WallMode
+  -   TP4065 Lipo Battery Charger Circuit
+  -   Battery Switchover Circuit once Battery is fully charged to avoid Battery damage due to overcharging
   -   TPL5110 Low Power RTC Module
   -   RV3028 Low Power Module
-  -   RF Module RFM95
-  -   230V Power Converter for Wall Mode.
+  -   Long Range Communication Module RF Module RFM95
+  -   230V Power Converter to 5V/3.3V for Wall Mode.
   
 
 Software Sketches working:
