@@ -10,7 +10,7 @@ You want to push boundries even further: Use Arduino and do a deep Dive in Ultra
 
 <img src="/Pictures/WhiteHiddenButtonsCase/ProductSideAbove.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons. Ambient Light OFF" title="Product View of WifiWallSwitch with disabled RGB LEDs">
 
-Eight Ambient Light LEDs can give you a visuel quick feedback if needed:
+Eight Ambient Light LEDs can give you a visual quick feedback if needed:
 <img src="Pictures/WhiteHiddenButtonsCase/IMG20240105185650.jpg" alt="Side View of WifiWallSwitch with EINK Screen and Design Buttons. Ambient Light ON" title="Product View of WifiWallSwitch with enabled RGB LEDs">
 
 
