@@ -13,9 +13,27 @@ Close Up View
 
 
 
+
+
 What is under the hood:
 Main thing you see when you have a first look is the massive 2.7 " E-Ink Screen
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/LDREINK.png" alt="Customer VIEW of PCB of WifiWallSwitch" title="WiFiWallSwitch Customer side">
+
+
+Hardware Specs:
+- 2.7" EInk Epaper with or without Touch Screen... other screens might work as well
+- ESP32 S3 Dual Core Microcontroller with USB OTG, Wifi & BT, Mass Storage Mode. 
+- 8 X SK6812 Mini RBG LEDs
+- 8 X Hardware Buttons...REAL BUTTONS with clicky: No Touch shit
+- BME680 for eCo2, Temperature, Humidity and Pressure Measurements
+- LSM6DSL Ultra Low Noise MEMS Gyro + Accel for Movement Detection and Earthquake Detection
+- INMP441 MEMS Microphone for Voice Assistant
+- Socket for MAX98357A I2S Class D Amplifier for Audio Output
+- RTC1: TPL5110 for PowerGateing and low Standby Current
+- RTC2: RV3028 C7 for Ultra Low RTC with Backup Cap lasts 3h
+- Optional: RFM95 LoRa Radio for Desaster Radio (Limitations: May not work together with Microphone)
+- Connector for KNX EIB Smart Home with Nano BCU
+- Connector for Your Own Ideas... Several free GPIOs
 
 Please see https://hackaday.io/project/189884-airqearthq-lora-eink-wallswitch for further details
 
