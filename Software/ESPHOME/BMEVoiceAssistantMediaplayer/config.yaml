@@ -1,0 +1,409 @@
+esphome:
+  name: "einklichtschalter2"
+  friendly_name: EINKSCHALTER2
+  on_boot: 
+      - priority: 90
+        then: 
+        - output.turn_on: output_low
+
+esp32:
+  board: esp32-s3-devkitc-1
+  framework:
+    type: arduino
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "rzjgQVW6O5jVxWFjrWiP+C96fuSyEBiUBG5p93Z+sMA="
+
+ota:
+
+# Example configuration entry
+psram:
+  mode: octal
+  speed: 80MHz
+
+wifi:
+  ssid: CHANGEME
+  password: CHANGEME
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Esphome-Web-74E42C"
+    password: "cIyFVd4Wtytm"
+
+captive_portal:
+
+time:
+  - platform: homeassistant
+    id: ntp
+
+output:
+
+- platform: gpio
+  pin: GPIO12
+  id: output_low 
+
+# Example configuration entry
+i2c:
+     sda: 42
+     scl: 2
+     scan: true
+     frequency: 400kHz
+
+external_components:
+  - source: github://neffs/esphome@bsec2_bme68x
+    components: [ bme68x_bsec ]
+
+i2s_audio:
+  - id: i2s_out
+    i2s_lrclk_pin: GPIO48 
+    i2s_bclk_pin: GPIO13
+  - id: i2s_in
+    i2s_lrclk_pin: GPIO11 #WS 
+    i2s_bclk_pin: GPIO10 #SCK 
+
+microphone:
+  - platform: i2s_audio
+    adc_type: external
+    pdm: false
+    id: mic_i2s
+    channel: right
+    bits_per_sample: 32bit
+    i2s_audio_id: i2s_in
+    i2s_din_pin: GPIO14  #SD Pin from the INMP441 Microphone
+
+
+media_player:
+  - platform: i2s_audio
+    name: "esp_speaker"
+    id: media_player_speaker
+    i2s_audio_id: i2s_out
+    dac_type: external
+    i2s_dout_pin: GPIO18   #  DIN Pin of the MAX98357A Audio Amplifier
+    mode: mono
+
+voice_assistant:
+  microphone: mic_i2s
+  id: va
+  noise_suppression_level: 2
+  auto_gain: 31dBFS
+  volume_multiplier: 4.0
+  use_wake_word: false
+  media_player: media_player_speaker
+  
+  on_wake_word_detected: 
+    - light.turn_on:
+        id: led_light
+  on_listening: 
+    - light.turn_on:
+        id: led_light
+        effect: "Scan Effect With Custom Values"
+        red: 63%
+        green: 13%
+        blue: 93%
+  
+  on_stt_end:
+    - light.turn_on:
+        id: led_light
+        effect: "None"
+        red: 0%
+        green: 100%
+        blue: 0%
+
+  on_error: 
+    - light.turn_on:
+        id: led_light
+        effect: "None"
+    - if:
+        condition:
+          switch.is_on: use_wake_word
+        then:
+
+          - switch.turn_off: use_wake_word
+          - delay: 1sec 
+          - switch.turn_on: use_wake_word      
+  
+
+
+  on_client_connected:
+    - if:
+        condition:
+          switch.is_on: use_wake_word
+        then:
+          - voice_assistant.start_continuous:
+
+  on_client_disconnected:
+    - if:
+        condition:
+          switch.is_on: use_wake_word
+        then:
+          - voice_assistant.stop:
+ 
+  on_end:
+    - light.turn_off:
+        id: led_light
+    
+ 
+binary_sensor:
+  - platform: status
+    name: API Connection
+    id: api_connection
+    filters:
+      - delayed_on: 1s
+    on_press:
+      - if:
+          condition:
+            switch.is_on: use_wake_word
+          then:
+            - voice_assistant.start_continuous:
+    on_release:
+      - if:
+          condition:
+            switch.is_on: use_wake_word
+          then:
+            - voice_assistant.stop:
+
+
+switch:
+  - platform: template
+    name: Use wake word
+    id: use_wake_word
+    optimistic: true
+    restore_mode: RESTORE_DEFAULT_ON
+    entity_category: config
+    on_turn_on:
+      - lambda: id(va).set_use_wake_word(true);
+      - if:
+          condition:
+            not:
+              - voice_assistant.is_running
+          then:
+            - voice_assistant.start_continuous
+    
+    on_turn_off:
+      - voice_assistant.stop
+      - lambda: id(va).set_use_wake_word(false);
+
+light:
+  - platform: neopixelbus
+    id: led_light
+    type: grb
+    pin: GPIO41      # DIN pin of the LED Strip
+    num_leds: 9      # change the Number of LEDS according to your LED Strip.
+    name: "Light"
+    variant: SK6812
+    default_transition_length: 0.5s
+      
+    effects:
+      - addressable_scan:
+          name: Scan Effect With Custom Values
+          move_interval: 50ms
+          scan_width: 2
+
+font:
+  - file: "Arial.ttf"
+    id: arial
+    size: 12 
+  - file: "GoogleSans-Bold.ttf"
+    id: font_name
+    size: 38
+  - file: "GoogleSans-Medium.ttf"
+    id: font_value
+    size: 56    
+  - file: "GoogleSans-Medium.ttf"
+    id: font_footer
+    size: 28
+  - file: "GoogleSans-Medium.ttf"
+    id: font_small
+    size: 18      
+
+    # https://pictogrammers.github.io/@mdi/font/5.3.45/
+  - file: 'materialdesignicons-webfont.ttf'
+    id: font_icons
+    size: 56
+    glyphs:
+      - "\U000F0594" # clear-night
+      - "\U000F0590" # cloudy
+      - "\U000F0595" # partlycloudy
+      - "\U000F0591" # fog      
+      - "\U000F0592" # hail
+      - "\U000F0593" # lightning
+      - "\U000F067E" # lightning-rainy
+      - "\U000F0596" # pouring
+      - "\U000F0597" # rainy
+      - "\U000F0F36" # snowy
+      - "\U000F067F" # snowy-rainy
+      - "\U000F0599" # sunny
+      - "\U000F059D" # windy
+      - "\U000F059E" # windy-variant
+      - "\U000F0F38" # exceptional
+      
+  - file: 'materialdesignicons-webfont.ttf'
+    id: font_icons_small
+    size: 30
+    glyphs:
+      - "\U000F10C2" # Temperature High
+      - "\U000F10C3" # Temperature Low
+      - "\U000F07E4" # CO2
+      - "\U000F054B" # umbrella      
+      - "\U000F0592" # hail
+      - "\U000F0593" # lightning
+      - "\U000F067E" # lightning-rainy
+      - "\U000F0597" # rainy
+      - "\U000F0F36" # snowy
+      - "\U000F0594" # clear-night
+      - "\U000F0599" # sunny
+      - "\U000F07CA" # fuel
+      - "\U000F024A" # flower
+      - "\U000F051F" # time-remaining
+      - "\U000F140B" # Energy
+      - "\U000F059D" # windy
+      - "\U000F001C" # AirBallon
+      - "\U000F0D98" # Orbit
+      - "\U000F0509" # Terrain
+      - "\U000F0647" # Gas Cylinder
+      - "\U000F0D43" # Air Filter
+      - "\U000F09A0" # Shower
+      - "\U000F05CB" # Account Voice
+      - "\U000F0335" # Lightbulb
+      - "\U000F1481" # Giesskanne
+      - "\U000F02D1" # Heart
+      - "\U000F010B" #Auto
+      - "\U000F05DF" #Kamera off
+      - "\U000F070E" #Mensch rennt
+      - "\U000F0A26" #Ballon
+      
+
+bme68x_bsec:
+  address: 0x77 
+  state_save_interval: 5min
+  bsec_configuration: 0,0,4,2,189,1,0,0,0,0,0,0,158,7,0,0,176,0,1,0,0,192,168,71,64,49,119,76,0,0,97,69,0,0,97,69,137,65,0,63,0,0,0,63,0,0,64,63,205,204,204,62,10,0,3,0,0,0,96,64,23,183,209,56,0,0,0,0,0,0,0,0,0,0,0,0,205,204,204,189,0,0,0,0,0,0,0,0,0,0,128,63,0,0,0,0,0,0,128,63,0,0,0,0,0,0,0,0,0,0,128,63,0,0,0,0,0,0,128,63,0,0,0,0,0,0,0,0,0,0,128,63,0,0,0,0,0,0,128,63,82,73,157,188,95,41,203,61,118,224,108,63,155,230,125,63,191,14,124,63,0,0,160,65,0,0,32,66,0,0,160,65,0,0,32,66,0,0,32,66,0,0,160,65,0,0,32,66,0,0,160,65,8,0,2,0,236,81,133,66,16,0,3,0,10,215,163,60,10,215,35,59,10,215,35,59,13,0,5,0,0,0,0,0,100,35,41,29,86,88,0,9,0,229,208,34,62,0,0,0,0,0,0,0,0,218,27,156,62,225,11,67,64,0,0,160,64,0,0,0,0,0,0,0,0,94,75,72,189,93,254,159,64,66,62,160,191,0,0,0,0,0,0,0,0,33,31,180,190,138,176,97,64,65,241,99,190,0,0,0,0,0,0,0,0,167,121,71,61,165,189,41,192,184,30,189,64,12,0,10,0,0,0,0,0,0,0,0,0,13,5,11,0,1,2,2,207,61,208,65,149,110,24,66,180,108,177,65,219,148,13,192,70,132,58,66,163,58,140,192,12,99,178,192,185,59,255,193,178,213,175,63,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,110,211,55,195,237,6,56,67,0,0,0,0,0,0,0,0,26,3,255,63,61,246,7,192,171,201,228,192,249,144,215,63,237,199,104,193,128,158,216,64,117,140,155,63,137,120,129,67,108,109,253,191,0,0,0,0,81,64,57,68,103,241,231,64,109,29,152,192,209,43,193,63,93,54,30,65,197,46,92,64,128,27,224,192,6,20,144,191,56,179,130,64,0,0,0,0,43,156,59,196,33,217,100,194,104,77,72,65,15,103,175,191,249,252,12,193,63,117,253,192,233,5,141,65,155,42,25,64,13,88,249,191,0,0,0,0,48,141,122,190,204,150,44,192,36,162,29,193,96,59,39,189,54,202,48,65,151,205,68,64,79,105,55,193,53,120,53,192,77,211,32,192,0,0,0,0,193,207,92,65,239,201,76,65,208,70,82,66,81,63,96,65,48,179,0,194,251,96,242,193,176,51,96,194,153,114,98,66,144,247,64,65,0,0,0,0,219,179,180,63,175,218,119,191,51,71,207,191,245,145,129,63,53,16,244,65,138,208,117,65,138,97,36,66,228,15,32,195,126,91,103,191,0,0,0,0,26,151,170,193,64,105,49,193,46,223,189,193,129,203,168,193,40,91,49,66,4,87,107,65,205,202,37,65,244,36,154,66,240,85,39,193,0,0,0,0,166,96,87,192,114,7,68,191,233,32,214,63,84,249,40,192,45,78,132,64,145,33,253,61,49,43,187,192,244,32,77,67,224,250,71,191,0,0,0,0,103,75,214,190,206,141,252,63,99,15,178,65,80,79,166,190,214,25,146,192,165,29,24,194,18,228,219,193,113,246,235,194,49,115,232,63,0,0,0,0,17,211,124,64,56,252,251,62,25,118,148,193,168,234,94,64,131,157,82,64,217,119,236,65,120,245,240,65,17,69,168,195,49,51,8,63,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,131,217,97,66,182,104,101,194,0,0,0,0,0,0,0,0,6,142,142,195,229,54,143,67,0,0,0,0,0,0,0,0,25,224,153,66,217,51,154,194,0,0,0,0,0,0,0,0,142,36,105,194,199,63,110,66,0,0,0,0,0,0,0,0,206,73,250,193,138,69,249,65,0,0,0,0,0,0,0,0,123,173,127,66,20,116,128,194,0,0,0,0,0,0,0,0,49,65,49,64,205,213,107,192,0,0,0,0,0,0,0,0,189,250,179,194,164,98,180,66,0,0,0,0,0,0,0,0,96,182,197,67,155,71,197,195,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,9,0,2,185,28,179,73,64,25,141,76,223,26,138,76,222,207,133,76,87,134,164,75,23,127,159,75,166,9,155,75,94,120,170,73,95,221,177,73,93,44,182,73,0,0,0,0,0,0,0,0,0,0,0,0,30,55,120,73,215,98,32,76,7,79,34,76,161,238,36,76,119,151,160,75,119,96,157,75,202,75,154,75,118,89,111,73,133,239,116,73,219,140,120,73,0,0,128,63,0,0,128,63,0,0,128,63,0,0,0,88,1,254,0,2,1,5,48,117,100,0,44,1,112,23,151,7,132,3,197,0,92,4,144,1,64,1,64,1,144,1,48,117,48,117,48,117,48,117,100,0,100,0,100,0,48,117,48,117,48,117,100,0,100,0,48,117,48,117,8,7,8,7,8,7,8,7,8,7,100,0,100,0,100,0,100,0,48,117,48,117,48,117,100,0,100,0,100,0,48,117,48,117,100,0,100,0,255,255,255,255,255,255,255,255,255,255,44,1,44,1,44,1,44,1,44,1,44,1,44,1,44,1,44,1,44,1,44,1,44,1,44,1,44,1,255,255,255,255,255,255,255,255,255,255,112,23,112,23,112,23,112,23,8,7,8,7,8,7,8,7,112,23,112,23,112,23,112,23,112,23,112,23,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,112,23,112,23,112,23,112,23,255,255,255,255,220,5,220,5,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,220,5,220,5,220,5,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,255,44,1,0,5,10,5,0,2,0,10,0,30,0,5,0,5,0,5,0,5,0,5,0,5,0,64,1,100,0,100,0,100,0,200,0,200,0,200,0,64,1,64,1,64,1,10,1,0,0,0,0,233,74,0,0
+# Example configuration entry
+sensor:
+  - platform: homeassistant
+    name: "Feuchte Sensor From Home Assistant"
+    id: feuchte
+    entity_id: sensor.unknown_70_ee_50_27_ac_1e_humidity
+  
+  - platform: homeassistant
+    name: "CO2 Sensor From Home Assistant"
+    id: co2
+    entity_id: sensor.openweathermap_feels_like_temperature
+  
+  - platform: homeassistant
+    name: "Temperatur Netatmo"
+    id: InnenTemp
+    entity_id: sensor.openweathermap_feels_like_temperature
+
+  - platform: homeassistant
+    name: "Co2 Netatmo"
+    id: co2Netatmo
+    entity_id: sensor.unknown_70_ee_50_27_ac_1e_co2
+  - platform: bme68x_bsec
+    temperature:
+      name: "BME680 Temperature"
+      id: "temperature"
+      filters:
+        - median
+    pressure:
+      name: "BME680 Pressure"
+      id: "pressure"
+      filters:
+        - median
+    humidity:
+      name: "BME680 Humidity"
+      id: "humidity"
+      filters:
+        - median
+    iaq:
+      name: "BME680 IAQ"
+      id: "BME680IAQ"
+      filters:
+        - median
+    iaq_static:
+      name: "BME680 Static IAQ"
+      filters:
+        - median
+    co2_equivalent:
+      name: "BME680 CO2 Equivalent"
+      id: "BME680CO2"
+      filters:
+        - median
+    breath_voc_equivalent:
+      name: "BME680 Breath VOC Equivalent"
+      filters:
+        - median
+    gas_resistance:
+      # Gas resistance in Ω
+      name: "BME680 Gas Resistance"
+      id: "gas_resistance"
+      filters:
+        - median
+        
+text_sensor:
+  - platform: bme68x_bsec
+    iaq_accuracy: 
+      # IAQ accuracy as a text value of Stabilizing, Uncertain, Calibrating, Calibrated
+      name: "BME680 IAQ Accuracy"
+
+spi: #for e-paper display
+  clk_pin: 21
+  mosi_pin: 9
+
+graph:
+  - id: co2_graph
+    sensor: co2Netatmo
+    duration: 2h
+    width: 110
+    height: 90
+    y_grid: 500.0
+    x_grid: 30min
+    border: True
+
+display:
+
+  - platform: waveshare_epaper
+    cs_pin: 47
+    dc_pin: 38
+    busy_pin: 40
+    reset_pin: 39 
+    #model: 4.20in
+    model: 2.70in
+    reset_duration: 300ms
+    update_interval: 360s
+    rotation: 180
+    #full_update_every: 30 
+    id: epaper_display
+    lambda: |-
+      it.print(50, 0, id(arial), "E-Ink Switch2!");    
+      it.printf(50, 50, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F024A"); //flower
+      it.printf(50, 80, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F10C3"); //TempHigh
+      it.printf(50, 100, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F0509"); //Terrain
+      it.printf(50, 125, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F07E4"); //CO2
+      it.printf(50, 150, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F0D43"); //AIR Filter
+      
+      
+      it.printf(65, 20, id(font_small), "%.1f %%", id(humidity).state);    
+      it.printf(65, 50, id(font_small), "%.1f °C", id(temperature).state);    
+      it.printf(65, 80, id(font_small), "%.0f hPa", id(pressure).state);    
+      it.printf(65, 100, id(font_small), "%.0f ppm", id(BME680CO2).state);    
+      it.printf(65, 125, id(font_small), "%.1f IAQ", id(BME680IAQ).state);    
+      it.graph(30, 150, id(co2_graph));
+
+      
+      it.printf(20, 25, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F09A0"); //Shower
+      it.printf(20, 100, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F05CB"); //Sprache
+      it.printf(20, 190, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F0335"); //Glühbirne
+      it.printf(20, 250, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F02D1"); //Herz
+
+
+      it.printf(155, 25, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F1481"); //Kanne
+      it.printf(155, 100, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F010B"); //Auto
+      it.printf(155, 190, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F05DF"); //Kamera off
+      it.printf(155, 250, id(font_icons_small), TextAlign::BASELINE_CENTER, "\U000F070E"); //Mensch rennt
+
+      it.printf(20, 253, id(arial), TextAlign::BASELINE_LEFT, "Updated: %H:%M", id(ntp).now());
