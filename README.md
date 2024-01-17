@@ -21,6 +21,7 @@ What is under the hood:
 Main thing you see when you have a first look is the massive 2.7 " E-Ink Screen
 <img src="Hardware/S3-27-epaper-touch-pro/schematics/LDREINK.png" alt="Customer VIEW of PCB of WifiWallSwitch" title="WiFiWallSwitch Customer side">
 
+See it in Action here: https://twitter.com/USpizig/status/1747731234338336940
 
 Hardware Specs:
 - 2.7" EInk Epaper with or without Touch Screen... other screens might work as well
